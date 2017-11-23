@@ -79,17 +79,21 @@
 
 
 
-<meta name="description" content="Welcome to my technology blog !This is the first blog I built myself and I will update my study and thinking life in it later.I hope it can also help others who">
+<meta name="description" content="前言► 实际开发中以下场景往往由于事件频繁被触发，从而频繁执行DOM操作、资源加载等行为，导致页面卡顿甚至浏览器崩溃：  window对象的 resize、scroll 事件  拖拽时的 mousemove 事件  射击游戏中的 mousedown、keydown 事件  文字输入、自动完成的 keyup 事件   ►">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Welcome">
-<meta property="og:url" content="http://yoursite.com/2017/11/19/welcome/index.html">
+<meta property="og:title" content="函数防抖与函数节流">
+<meta property="og:url" content="http://yoursite.com/2017/11/23/函数防抖与函数节流/index.html">
 <meta property="og:site_name" content="fx&#39;s blog">
-<meta property="og:description" content="Welcome to my technology blog !This is the first blog I built myself and I will update my study and thinking life in it later.I hope it can also help others who read this blog，let’s step forward toget">
+<meta property="og:description" content="前言► 实际开发中以下场景往往由于事件频繁被触发，从而频繁执行DOM操作、资源加载等行为，导致页面卡顿甚至浏览器崩溃：  window对象的 resize、scroll 事件  拖拽时的 mousemove 事件  射击游戏中的 mousedown、keydown 事件  文字输入、自动完成的 keyup 事件   ► 对于 window 的 resize 事件，实际需求一般是停止改变大小n毫秒后">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-23T09:15:47.247Z">
+<meta property="og:image" content="http://i2.bvimg.com/603805/e072301856d82602.png">
+<meta property="og:image" content="http://i2.bvimg.com/603805/a203d2e6fc4b12f0.png">
+<meta property="og:image" content="http://i2.bvimg.com/603805/d32393a66dcf73c1.png">
+<meta property="og:updated_time" content="2017-11-23T11:15:22.687Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Welcome">
-<meta name="twitter:description" content="Welcome to my technology blog !This is the first blog I built myself and I will update my study and thinking life in it later.I hope it can also help others who read this blog，let’s step forward toget">
+<meta name="twitter:title" content="函数防抖与函数节流">
+<meta name="twitter:description" content="前言► 实际开发中以下场景往往由于事件频繁被触发，从而频繁执行DOM操作、资源加载等行为，导致页面卡顿甚至浏览器崩溃：  window对象的 resize、scroll 事件  拖拽时的 mousemove 事件  射击游戏中的 mousedown、keydown 事件  文字输入、自动完成的 keyup 事件   ► 对于 window 的 resize 事件，实际需求一般是停止改变大小n毫秒后">
+<meta name="twitter:image" content="http://i2.bvimg.com/603805/e072301856d82602.png">
 
 
 
@@ -119,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/11/19/welcome/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/23/函数防抖与函数节流/"/>
 
 
 
 
 
-  <title>Welcome | fx's blog</title>
+  <title>函数防抖与函数节流 | fx's blog</title>
   
 
 
@@ -232,7 +236,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/19/welcome/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/23/函数防抖与函数节流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Day Break">
@@ -249,7 +253,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Welcome</h1>
+          <h1 class="post-title" itemprop="name headline">函数防抖与函数节流</h1>
         
 
         <div class="post-meta">
@@ -261,8 +265,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-19T15:20:59+08:00">
-                2017-11-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-23T19:15:07+08:00">
+                2017-11-23
               </time>
             
 
@@ -299,7 +303,28 @@
       
 
       
-        <p>Welcome to my technology blog !<br>This is the first blog I built myself and I will update my study and thinking life in it later.<br>I hope it can also help others who read this blog，let’s step forward together！</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>► 实际开发中以下场景往往由于事件频繁被触发，从而频繁执行DOM操作、资源加载等行为，导致页面卡顿甚至浏览器崩溃：</p>
+<ol>
+<li><p>window对象的 resize、scroll 事件</p>
+</li>
+<li><p>拖拽时的 mousemove 事件</p>
+</li>
+<li><p>射击游戏中的 mousedown、keydown 事件</p>
+</li>
+<li><p>文字输入、自动完成的 keyup 事件</p>
+</li>
+</ol>
+<p>► 对于 window 的 resize 事件，实际需求一般是停止改变大小n毫秒后执行；而其它事件一般是以一定的频率执行。</p>
+<p>► 针对这两种需求就出现了 debounce (防抖) 和 throttle (节流) 两种解决办法</p>
+<h2 id="函数防抖"><a href="#函数防抖" class="headerlink" title="函数防抖"></a>函数防抖</h2><p>► 如果用手一直按住一个弹簧，它将不会弹起直到你松手为止，也就是调用动作n毫秒后才会执行该动作，如果n毫秒内再次调用则重新计算执行时间</p>
+<p>简单实现： debounce 方法接收两个参数，一个是需要防抖动的函数 <strong>fn</strong> ，另一个是延迟时间 <strong>delay</strong></p>
+<p><img src="http://i2.bvimg.com/603805/e072301856d82602.png" alt="Markdown"></p>
+<h2 id="函数节流"><a href="#函数节流" class="headerlink" title="函数节流"></a>函数节流</h2><p>► 将水龙头拧到水以水滴的形式流出，每隔一段时间就有一滴水流出，也就是预先设定一个执行周期，调用动作的时刻不小于这个执行周期就执行它</p>
+<p>简单实现：throttle 方法也是接收两个参数，一个是需要节流的函数 <strong>fn</strong> ，另一个是函数执行间隔阈值 <strong>threshhold</strong></p>
+<p><img src="http://i2.bvimg.com/603805/a203d2e6fc4b12f0.png" alt="Markdown"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>可以参考一下防抖和节流与正常触发的对比效果图：<br><img src="http://i2.bvimg.com/603805/d32393a66dcf73c1.png" alt="Markdown"></p>
+<p>► debounce 可以想象成把很多事件压缩成了一个事件，throttle 可以想象成像阀门一样定时打开调节流量</p>
+<p>► 简单来说，debounce 适合只执行一次的情况，比如 搜索框的自动完成：在停止输入后才提交一次ajax请求； throttle 适合每隔一定时间间隔内执行不超过一次的情况，比如 拖动滚动条、移动鼠标、滚轮事件的处理等</p>
 
       
     </div>
@@ -324,15 +349,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/11/23/ES6基础概念/" rel="next" title="ES6基础概念">
+                <i class="fa fa-chevron-left"></i> ES6基础概念
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/11/23/Hexo-blog/" rel="prev" title="Hexo + Github Pages搭建你的博客">
-                Hexo + Github Pages搭建你的博客 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -384,8 +409,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -442,6 +476,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数防抖"><span class="nav-number">2.</span> <span class="nav-text">函数防抖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数节流"><span class="nav-number">3.</span> <span class="nav-text">函数节流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
