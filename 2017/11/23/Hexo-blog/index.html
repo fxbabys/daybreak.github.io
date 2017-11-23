@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="blog," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to my technology blog !This is the first blog I built myself and I will update my study and thinking life in it later.I hope it can also help others who">
+<meta name="description" content="一开始自己用hexo搭博客的时候踩了比较多坑，在这里想总结一下做一个简单的搭建教程，后续使用再慢慢完善 初始配置环境 node 作用：生成静态页面 Git 作用：将本地的hexo内容提交到github上 申请Github 作用：作为博客的远程仓库和服务器  Hexo的安装及初始化环境配置好后，创建一个文件夹，进入后执行">
+<meta name="keywords" content="blog">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Welcome">
-<meta property="og:url" content="http://yoursite.com/2017/11/19/welcome/index.html">
+<meta property="og:title" content="Hexo + Github Pages搭建你的博客">
+<meta property="og:url" content="http://yoursite.com/2017/11/23/Hexo-blog/index.html">
 <meta property="og:site_name" content="fx&#39;s blog">
-<meta property="og:description" content="Welcome to my technology blog !This is the first blog I built myself and I will update my study and thinking life in it later.I hope it can also help others who read this blog，let’s step forward toget">
+<meta property="og:description" content="一开始自己用hexo搭博客的时候踩了比较多坑，在这里想总结一下做一个简单的搭建教程，后续使用再慢慢完善 初始配置环境 node 作用：生成静态页面 Git 作用：将本地的hexo内容提交到github上 申请Github 作用：作为博客的远程仓库和服务器  Hexo的安装及初始化环境配置好后，创建一个文件夹，进入后执行以下命令：  npm install hexo-cli -g 安装hexo he">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-23T09:15:47.247Z">
+<meta property="og:updated_time" content="2017-11-23T10:12:20.186Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Welcome">
-<meta name="twitter:description" content="Welcome to my technology blog !This is the first blog I built myself and I will update my study and thinking life in it later.I hope it can also help others who read this blog，let’s step forward toget">
+<meta name="twitter:title" content="Hexo + Github Pages搭建你的博客">
+<meta name="twitter:description" content="一开始自己用hexo搭博客的时候踩了比较多坑，在这里想总结一下做一个简单的搭建教程，后续使用再慢慢完善 初始配置环境 node 作用：生成静态页面 Git 作用：将本地的hexo内容提交到github上 申请Github 作用：作为博客的远程仓库和服务器  Hexo的安装及初始化环境配置好后，创建一个文件夹，进入后执行以下命令：  npm install hexo-cli -g 安装hexo he">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/11/19/welcome/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/23/Hexo-blog/"/>
 
 
 
 
 
-  <title>Welcome | fx's blog</title>
+  <title>Hexo + Github Pages搭建你的博客 | fx's blog</title>
   
 
 
@@ -232,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/19/welcome/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/23/Hexo-blog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Day Break">
@@ -249,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Welcome</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo + Github Pages搭建你的博客</h1>
         
 
         <div class="post-meta">
@@ -261,8 +262,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-19T15:20:59+08:00">
-                2017-11-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-23T17:24:47+08:00">
+                2017-11-23
               </time>
             
 
@@ -299,7 +300,32 @@
       
 
       
-        <p>Welcome to my technology blog !<br>This is the first blog I built myself and I will update my study and thinking life in it later.<br>I hope it can also help others who read this blog，let’s step forward together！</p>
+        <p>一开始自己用hexo搭博客的时候踩了比较多坑，在这里想总结一下做一个简单的搭建教程，后续使用再慢慢完善</p>
+<h1 id="初始配置环境"><a href="#初始配置环境" class="headerlink" title="初始配置环境"></a>初始配置环境</h1><ul>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">node</a> 作用：生成静态页面</li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> 作用：将本地的hexo内容提交到github上</li>
+<li><a href="https://github.com/" target="_blank" rel="noopener">申请Github</a> 作用：作为博客的远程仓库和服务器</li>
+</ul>
+<h1 id="Hexo的安装及初始化"><a href="#Hexo的安装及初始化" class="headerlink" title="Hexo的安装及初始化"></a>Hexo的安装及初始化</h1><p>环境配置好后，创建一个文件夹，进入后执行以下命令：</p>
+<ul>
+<li><code>npm install hexo-cli -g</code> 安装hexo</li>
+<li><code>hexo init</code> 初始化</li>
+<li><code>npm install</code></li>
+<li><code>hexo generate</code> 生成静态页面</li>
+<li><code>hexo server</code> 启动本地服务<br>之后浏览器输入<a href="http://localhost:4000" target="_blank" rel="noopener">localhost:4000</a> 就可以看到一个默认的hexo博客啦</li>
+</ul>
+<h1 id="Github上的配置"><a href="#Github上的配置" class="headerlink" title="Github上的配置"></a>Github上的配置</h1><p>进入Github新建一个仓库，这里特别要强调的是仓库名的格式必须为yourusername.github.io，yourusername就是你的Github用户名，这里错误的话，之后直接访问就会404（我就是这样o(╥﹏╥)o）,建好以后就clone一下HTTPS形式的url（这里先不用SSH）</p>
+<h1 id="本地Hexo文件的修改"><a href="#本地Hexo文件的修改" class="headerlink" title="本地Hexo文件的修改"></a>本地Hexo文件的修改</h1><p>进入Hexo文件根目录下的_config.yml，打开以后拉到最下面的deploy那里，改成如下形式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/fxbabys/fxbabys.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<p>这里也特别要强调的是冒号后面一定要加空格</p>
+<p>然后执行命令安装: <code>npm install hexo-deployer-git --save</code><br>再执行配置命令: <code>hexo deploy</code><br>这样本地文件就上传到Github远程库上了，访问<a href="https://fxbabys.github.io/" target="_blank" rel="noopener">https://fxbabys.github.io/</a>就行了</p>
+<p>之后每次部署发布文章可以按下面的步骤进行：</p>
+<ul>
+<li><code>hexo new &quot;文章名称&quot;</code> 这样会在source/_posts下生成一个md文档</li>
+<li><code>hexo server(hexo s)</code> 上传前本地先预览一下效果</li>
+<li><code>hexo generate(hexo g)</code></li>
+<li><code>hexo deploy(hexo d)</code></li>
+</ul>
+<p>到这里搭建一个hexo博客和发布新文章就完成啦！<br>更个性化的设置可以自己去<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>官方文档上查看，介绍的都很详细，也可以去网上找教程再多折腾一些自己的喜好（(<em>^▽^</em>)）</p>
 
       
     </div>
@@ -315,6 +341,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/blog/" rel="tag"># blog</a>
+          
+        </div>
+      
 
       
       
@@ -324,15 +356,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/11/19/welcome/" rel="next" title="Welcome">
+                <i class="fa fa-chevron-left"></i> Welcome
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/11/23/Hexo-blog/" rel="prev" title="Hexo + Github Pages搭建你的博客">
-                Hexo + Github Pages搭建你的博客 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -384,8 +416,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -442,6 +483,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#初始配置环境"><span class="nav-number">1.</span> <span class="nav-text">初始配置环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo的安装及初始化"><span class="nav-number">2.</span> <span class="nav-text">Hexo的安装及初始化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Github上的配置"><span class="nav-number">3.</span> <span class="nav-text">Github上的配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地Hexo文件的修改"><span class="nav-number">4.</span> <span class="nav-text">本地Hexo文件的修改</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
