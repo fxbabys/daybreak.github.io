@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="逐步补上之前的数据结构实验代码，之后也会不断完善，仅供参考(^▽^) ►顺序表链表的创建输出及两种有序表的合并 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565">
+<meta name="description" content="逐步补上之前的数据结构实验代码，之后也会不断完善，仅供参考(^▽^) 顺序表链表的创建输出及两种有序表的合并►对于顺序表和单链表定义不同的结构体，顺序表通过下标创建并输出 链表为带头结点的单链表，使用尾插法创建并输出►从头开始遍历两个升序表，将更大的存入第三个表中，并将其标记后移 对于单链表，需要使用头插法插入第三个单">
 <meta name="keywords" content="数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构实验参考">
 <meta property="og:url" content="http://yoursite.com/2017/11/29/数据结构实验参考/index.html">
 <meta property="og:site_name" content="fx&#39;s blog">
-<meta property="og:description" content="逐步补上之前的数据结构实验代码，之后也会不断完善，仅供参考(^▽^) ►顺序表链表的创建输出及两种有序表的合并 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263#include&amp;lt;stdio.h&amp;gt;#inc">
+<meta property="og:description" content="逐步补上之前的数据结构实验代码，之后也会不断完善，仅供参考(^▽^) 顺序表链表的创建输出及两种有序表的合并►对于顺序表和单链表定义不同的结构体，顺序表通过下标创建并输出 链表为带头结点的单链表，使用尾插法创建并输出►从头开始遍历两个升序表，将更大的存入第三个表中，并将其标记后移 对于单链表，需要使用头插法插入第三个单链表中 123456789101112131415161718192021222">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-29T01:52:38.079Z">
+<meta property="og:updated_time" content="2017-11-29T05:15:15.353Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据结构实验参考">
-<meta name="twitter:description" content="逐步补上之前的数据结构实验代码，之后也会不断完善，仅供参考(^▽^) ►顺序表链表的创建输出及两种有序表的合并 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263#include&amp;lt;stdio.h&amp;gt;#inc">
+<meta name="twitter:description" content="逐步补上之前的数据结构实验代码，之后也会不断完善，仅供参考(^▽^) 顺序表链表的创建输出及两种有序表的合并►对于顺序表和单链表定义不同的结构体，顺序表通过下标创建并输出 链表为带头结点的单链表，使用尾插法创建并输出►从头开始遍历两个升序表，将更大的存入第三个表中，并将其标记后移 对于单链表，需要使用头插法插入第三个单链表中 123456789101112131415161718192021222">
 
 
 
@@ -322,7 +322,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-29T09:52:38+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-11-29T13:15:15+08:00">
                 2017-11-29
               </time>
             
@@ -369,7 +369,7 @@
 
       
         <p>逐步补上之前的数据结构实验代码，之后也会不断完善，仅供参考(<em>^▽^</em>)</p>
-<p>►顺序表链表的创建输出及两种有序表的合并</p>
+<h4 id="顺序表链表的创建输出及两种有序表的合并"><a href="#顺序表链表的创建输出及两种有序表的合并" class="headerlink" title="顺序表链表的创建输出及两种有序表的合并"></a>顺序表链表的创建输出及两种有序表的合并</h4><p>►对于顺序表和单链表定义不同的结构体，顺序表通过下标创建并输出<br> 链表为带头结点的单链表，使用尾插法创建并输出<br>►从头开始遍历两个升序表，将更大的存入第三个表中，并将其标记后移<br> 对于单链表，需要使用头插法插入第三个单链表中</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;math.h&gt;</span><br><span class="line"></span><br><span class="line">typedef struct &#123;</span><br><span class="line">    int a[100];</span><br><span class="line">    int len;</span><br><span class="line">&#125;list;</span><br><span class="line"></span><br><span class="line">void inputList(list *L) &#123;</span><br><span class="line">    int x, i = 0;</span><br><span class="line">    printf(&quot;输入一串数(以-1结束)：&quot;);</span><br><span class="line">    while(scanf(&quot;%d&quot;, &amp;x) &amp;&amp; x != -1) &#123;</span><br><span class="line">        L-&gt;a[i] = x;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    L-&gt;len = i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void printList(list *L) &#123;</span><br><span class="line">    printf(&quot;\n线性表为：&quot;);</span><br><span class="line">    int i;</span><br><span class="line">    for(i = 0; i &lt; L-&gt;len ; i++) &#123;</span><br><span class="line">        printf(&quot;%d &quot;, L-&gt;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void insertList(list *L, int x) &#123;</span><br><span class="line">    int i;</span><br><span class="line">    for(i = L-&gt;len-1; i &gt; 0 &amp;&amp; L-&gt;a[i] &gt; x; i--) &#123;</span><br><span class="line">        L-&gt;a[i+1] = L-&gt;a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    L-&gt;a[i+1] = x;</span><br><span class="line">    L-&gt;len++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void mergeDoubleUp(list *L1, list *L2, list *L3) &#123;</span><br><span class="line">    int i = 0, j = 0, tail = 0;</span><br><span class="line">    while(i &lt; L1-&gt;len &amp;&amp; j &lt; L2-&gt;len) &#123;</span><br><span class="line">        if(L1-&gt;a[i] &lt; L2-&gt;a[j]) &#123;</span><br><span class="line">            L3-&gt;a[tail] = L1-&gt;a[i];</span><br><span class="line">            i++;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            L3-&gt;a[tail] = L2-&gt;a[j];</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">        tail++;</span><br><span class="line">    &#125;</span><br><span class="line">    while(i &lt; L1-&gt;len) &#123; L3-&gt;a[tail] = L1-&gt;a[i]; i++; tail++; &#125;</span><br><span class="line">    while(j &lt; L2-&gt;len) &#123; L3-&gt;a[tail] = L2-&gt;a[j]; j++; tail++; &#125;</span><br><span class="line">    L3-&gt;len = tail;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line"></span><br><span class="line">    list L1, L2, L3;</span><br><span class="line">    inputList(&amp;L1);</span><br><span class="line">    inputList(&amp;L2);</span><br><span class="line">    mergeDoubleUp(&amp;L1, &amp;L2, &amp;L3);</span><br><span class="line">    printList(&amp;L3);</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">两个升序链表合并为一个降序链表</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line"></span><br><span class="line">typedef struct k &#123;</span><br><span class="line">    int data;</span><br><span class="line">    struct k *next;</span><br><span class="line">&#125;node;</span><br><span class="line"></span><br><span class="line">void createList(node *h) &#123;</span><br><span class="line">    node *p, *tail;</span><br><span class="line">    tail = h;</span><br><span class="line">    int x;</span><br><span class="line">    printf(&quot;输入一串数(以-1结束)：&quot;);</span><br><span class="line">    while(scanf(&quot;%d&quot;, &amp;x) &amp;&amp; x != -1) &#123;</span><br><span class="line">        p = (node *)malloc(sizeof(node));</span><br><span class="line">        p-&gt;data = x; p-&gt;next = NULL;</span><br><span class="line">        tail-&gt;next = p;</span><br><span class="line">        tail = p;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void printList(node *h) &#123;</span><br><span class="line">    node *p;</span><br><span class="line">    for(p = h-&gt;next; p != NULL; p = p-&gt;next) &#123;</span><br><span class="line">        printf(&quot;%d &quot;, p-&gt;data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void mergeDoubleDown(node *h1, node *h2, node *h3) &#123;</span><br><span class="line">    node *i, *j, *head;</span><br><span class="line">    i = h1-&gt;next; j = h2-&gt;next;</span><br><span class="line">    while(i != NULL &amp;&amp; j != NULL) &#123;</span><br><span class="line">        if(i-&gt;data &lt; j-&gt;data) &#123;</span><br><span class="line">            head = i;</span><br><span class="line">            i = i-&gt;next;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            head = j;</span><br><span class="line">            j = j-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        // 头插法建立h3链表</span><br><span class="line">        head-&gt;next = h3-&gt;next;</span><br><span class="line">        h3-&gt;next = head;</span><br><span class="line">    &#125;</span><br><span class="line">    // 尾部处理</span><br><span class="line">    while(i != NULL) &#123;</span><br><span class="line">        head = (node *)malloc(sizeof(node));</span><br><span class="line">        head-&gt;data = i-&gt;data;</span><br><span class="line">        i = i-&gt;next;</span><br><span class="line">        head-&gt;next = h3-&gt;next;</span><br><span class="line">        h3-&gt;next = head;</span><br><span class="line">    &#125;</span><br><span class="line">    while(j != NULL) &#123;</span><br><span class="line">        head = (node *)malloc(sizeof(node));</span><br><span class="line">        head-&gt;data = j-&gt;data;</span><br><span class="line">        j = j-&gt;next;</span><br><span class="line">        head-&gt;next = h3-&gt;next;</span><br><span class="line">        h3-&gt;next = head;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    node h1, h2, h3;</span><br><span class="line">    h1.next = NULL;</span><br><span class="line">    h2.next = NULL;</span><br><span class="line">    h3.next = NULL;</span><br><span class="line">    createList(&amp;h1);</span><br><span class="line">    createList(&amp;h2);</span><br><span class="line">    printf(&quot;\n链表1为&quot;);printList(&amp;h1);</span><br><span class="line">    printf(&quot;\n链表2为&quot;);printList(&amp;h2);</span><br><span class="line">    mergeDoubleDown(&amp;h1, &amp;h2, &amp;h3);</span><br><span class="line">    printf(&quot;\n链表3为&quot;);printList(&amp;h3);</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -467,8 +467,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -545,6 +554,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#顺序表链表的创建输出及两种有序表的合并"><span class="nav-number">1.</span> <span class="nav-text">顺序表链表的创建输出及两种有序表的合并</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
