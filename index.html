@@ -276,6 +276,148 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/30/Git常用操作/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Day Break">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/none.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fx's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/30/Git常用操作/" itemprop="url">Git常用操作</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-11-30T23:47:47+08:00">
+                2017-11-30
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/11/30/Git常用操作/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2017/11/30/Git常用操作/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>随着做项目的深入，对Git的使用也越来越频繁，这里就做一个常用操作的总结，不断更新~</p>
+<h3 id="Git理念"><a href="#Git理念" class="headerlink" title="Git理念"></a>Git理念</h3><p>► 本地文件<br>► 暂存区<br>► 本地仓库<br>► 远程仓库</p>
+<p>使用Git项目的文件都是在上面四个地方传递</p>
+<h3 id="本地项目关联远程仓库"><a href="#本地项目关联远程仓库" class="headerlink" title="本地项目关联远程仓库"></a>本地项目关联远程仓库</h3><p><code>git remote add origin your-remote-repository-url</code></p>
+<p>可以运行以下命令查看结果：</p>
+<p><code>git remote -v</code>  查看当前项目的远程库<br><code>git branch -a</code>  查看当前项目的所有分支</p>
+<h3 id="提交本地更新到远程库"><a href="#提交本地更新到远程库" class="headerlink" title="提交本地更新到远程库"></a>提交本地更新到远程库</h3><p><code>git status</code> 检查当前项目状态</p>
+<p>然后对于未跟踪的文件执行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add un-track-file-path  // 跟踪本地文件，提交到暂存区</span><br><span class="line">git commit -m &quot;your commit&quot; // 将跟踪过的文件即在暂存区的文件提交到本地仓库</span><br><span class="line">git push                    // 将本地仓库提交到远程库</span><br></pre></td></tr></table></figure>
+<p>这里一般是需要先同步远程库到本地的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull  // 等同于 git fetch + git merge</span><br></pre></td></tr></table></figure></p>
+<p>提交到远程库常用的命令还有：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git add .     // 跟踪本地所有未跟踪的文件</span><br><span class="line">git push --f  // 强制提交更新到远程库</span><br><span class="line"></span><br><span class="line">// 强制覆盖本地版本</span><br><span class="line">git fetch --all</span><br><span class="line">git reset --hard origin/master</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/29/数据结构实验参考/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1464,7 +1606,7 @@ in操作符        ---&gt;只要存在就返回true
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1477,7 +1619,7 @@ in操作符        ---&gt;只要存在就返回true
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
