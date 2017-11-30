@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="随着做项目的深入，对Git的使用也越来越频繁，这里就做一个常用操作的总结，不断更新~ Git理念► 本地文件► 暂存区► 本地仓库► 远程仓库 使用Git项目的文件都是在上面四个地方传递 本地项目关联远程仓库git remote add origin your-remote-repository-url 可以运行以下命">
+<meta name="description" content="随着做项目的深入，对Git的使用也越来越频繁，这里就做一个常用操作的总结，不断更新~ Git理念► 工作区（即本地文件）► 暂存区► 本地仓库► 远程仓库 使用Git项目的文件都是在上面四个地方传递 本地项目关联远程仓库远程库建好以后就可以运行这条命令关联到本地项目：git remote add origin your">
 <meta name="keywords" content="Git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git常用操作">
 <meta property="og:url" content="http://yoursite.com/2017/11/30/Git常用操作/index.html">
 <meta property="og:site_name" content="fx&#39;s blog">
-<meta property="og:description" content="随着做项目的深入，对Git的使用也越来越频繁，这里就做一个常用操作的总结，不断更新~ Git理念► 本地文件► 暂存区► 本地仓库► 远程仓库 使用Git项目的文件都是在上面四个地方传递 本地项目关联远程仓库git remote add origin your-remote-repository-url 可以运行以下命令查看结果： git remote -v  查看当前项目的远程库git bran">
+<meta property="og:description" content="随着做项目的深入，对Git的使用也越来越频繁，这里就做一个常用操作的总结，不断更新~ Git理念► 工作区（即本地文件）► 暂存区► 本地仓库► 远程仓库 使用Git项目的文件都是在上面四个地方传递 本地项目关联远程仓库远程库建好以后就可以运行这条命令关联到本地项目：git remote add origin your-remote-repository-url 如果是直接克隆远程仓库到本地的话：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-30T15:47:47.066Z">
+<meta property="og:updated_time" content="2017-11-30T16:33:22.482Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git常用操作">
-<meta name="twitter:description" content="随着做项目的深入，对Git的使用也越来越频繁，这里就做一个常用操作的总结，不断更新~ Git理念► 本地文件► 暂存区► 本地仓库► 远程仓库 使用Git项目的文件都是在上面四个地方传递 本地项目关联远程仓库git remote add origin your-remote-repository-url 可以运行以下命令查看结果： git remote -v  查看当前项目的远程库git bran">
+<meta name="twitter:description" content="随着做项目的深入，对Git的使用也越来越频繁，这里就做一个常用操作的总结，不断更新~ Git理念► 工作区（即本地文件）► 暂存区► 本地仓库► 远程仓库 使用Git项目的文件都是在上面四个地方传递 本地项目关联远程仓库远程库建好以后就可以运行这条命令关联到本地项目：git remote add origin your-remote-repository-url 如果是直接克隆远程仓库到本地的话：">
 
 
 
@@ -310,8 +310,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-30T23:47:47+08:00">
-                2017-11-30
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-01T00:33:22+08:00">
+                2017-12-01
               </time>
             
           </span>
@@ -357,16 +357,22 @@
 
       
         <p>随着做项目的深入，对Git的使用也越来越频繁，这里就做一个常用操作的总结，不断更新~</p>
-<h3 id="Git理念"><a href="#Git理念" class="headerlink" title="Git理念"></a>Git理念</h3><p>► 本地文件<br>► 暂存区<br>► 本地仓库<br>► 远程仓库</p>
+<h3 id="Git理念"><a href="#Git理念" class="headerlink" title="Git理念"></a>Git理念</h3><p>► 工作区（即本地文件）<br>► 暂存区<br>► 本地仓库<br>► 远程仓库</p>
 <p>使用Git项目的文件都是在上面四个地方传递</p>
-<h3 id="本地项目关联远程仓库"><a href="#本地项目关联远程仓库" class="headerlink" title="本地项目关联远程仓库"></a>本地项目关联远程仓库</h3><p><code>git remote add origin your-remote-repository-url</code></p>
+<h3 id="本地项目关联远程仓库"><a href="#本地项目关联远程仓库" class="headerlink" title="本地项目关联远程仓库"></a>本地项目关联远程仓库</h3><p>远程库建好以后就可以运行这条命令关联到本地项目：<br><code>git remote add origin your-remote-repository-url</code></p>
+<p>如果是直接克隆远程仓库到本地的话：<br><code>git clone your-remote-repository-url</code></p>
 <p>可以运行以下命令查看结果：</p>
 <p><code>git remote -v</code>  查看当前项目的远程库<br><code>git branch -a</code>  查看当前项目的所有分支</p>
+<h3 id="远程库同步到本地"><a href="#远程库同步到本地" class="headerlink" title="远程库同步到本地"></a>远程库同步到本地</h3><p>► 在提交更新以前都要先同步一下本地仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull  // 等同于 git fetch + git merge</span><br></pre></td></tr></table></figure></p>
+<p>如果需要放弃本地修改，强制覆盖本地版本的话（即保持与远程库一致）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git fetch --all</span><br><span class="line">git reset --hard origin/master</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure></p>
 <h3 id="提交本地更新到远程库"><a href="#提交本地更新到远程库" class="headerlink" title="提交本地更新到远程库"></a>提交本地更新到远程库</h3><p><code>git status</code> 检查当前项目状态</p>
 <p>然后对于未跟踪的文件执行以下命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add un-track-file-path  // 跟踪本地文件，提交到暂存区</span><br><span class="line">git commit -m &quot;your commit&quot; // 将跟踪过的文件即在暂存区的文件提交到本地仓库</span><br><span class="line">git push                    // 将本地仓库提交到远程库</span><br></pre></td></tr></table></figure>
-<p>这里一般是需要先同步远程库到本地的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull  // 等同于 git fetch + git merge</span><br></pre></td></tr></table></figure></p>
-<p>提交到远程库常用的命令还有：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git add .     // 跟踪本地所有未跟踪的文件</span><br><span class="line">git push --f  // 强制提交更新到远程库</span><br><span class="line"></span><br><span class="line">// 强制覆盖本地版本</span><br><span class="line">git fetch --all</span><br><span class="line">git reset --hard origin/master</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure></p>
+<p>提交到远程库常用的命令还有：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .     // 跟踪本地所有未跟踪的文件</span><br><span class="line">git push --f  // 强制提交更新，覆盖远程库</span><br></pre></td></tr></table></figure></p>
+<h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><p>► 将当前版本回退到已提交的版本历史中<br><code>git reset --hard HEAD^</code>   一个^号代表回退一个版本</p>
+<p>更多时候我们都会找到对应的版本号进行回退：<br>首先 <code>git log</code> 显示最近到最远的提交日志<br>如果只想显示版本号和评论信息的话可以加上 <code>--pretty=oneline</code> 参数<br>现在就可以  <code>git reset --hard version number</code>  回退到对应的版本</p>
+<p>这里还有一个常用命令：<br><code>git reflog</code> 显示你的每一次命令，对于自己命令的整理很有帮助</p>
+<h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><p>► 分情况执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 在工作区修改并且未跟踪</span><br><span class="line">git checkout -- file-path</span><br><span class="line"></span><br><span class="line">// 在工作区修改并且已跟踪</span><br><span class="line">git reset HEAD file-path  // 先撤销暂存区的修改</span><br><span class="line">git checkout -- file-path // 再撤销工作区的修改</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -559,7 +565,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git理念"><span class="nav-number">1.</span> <span class="nav-text">Git理念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地项目关联远程仓库"><span class="nav-number">2.</span> <span class="nav-text">本地项目关联远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提交本地更新到远程库"><span class="nav-number">3.</span> <span class="nav-text">提交本地更新到远程库</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git理念"><span class="nav-number">1.</span> <span class="nav-text">Git理念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地项目关联远程仓库"><span class="nav-number">2.</span> <span class="nav-text">本地项目关联远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#远程库同步到本地"><span class="nav-number">3.</span> <span class="nav-text">远程库同步到本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提交本地更新到远程库"><span class="nav-number">4.</span> <span class="nav-text">提交本地更新到远程库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#版本回退"><span class="nav-number">5.</span> <span class="nav-text">版本回退</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#撤销修改"><span class="nav-number">6.</span> <span class="nav-text">撤销修改</span></a></li></ol></div>
             
 
           </div>
