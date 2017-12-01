@@ -311,7 +311,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-12-01T00:36:43+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-01T09:30:22+08:00">
                 2017-12-01
               </time>
             
@@ -366,17 +366,24 @@
 <p>如果是直接克隆远程仓库到本地的话：<br><code>git clone your-remote-repository-url</code></p>
 <p>可以运行以下命令查看结果：</p>
 <p><code>git remote -v</code>  查看当前项目的远程库<br><code>git branch -a</code>  查看当前项目的所有分支</p>
-<h3 id="远程库同步到本地"><a href="#远程库同步到本地" class="headerlink" title="远程库同步到本地"></a>远程库同步到本地</h3><p>► 在提交更新以前都要先同步一下本地仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull  // 等同于 git fetch + git merge</span><br></pre></td></tr></table></figure></p>
+<h3 id="远程库同步到本地"><a href="#远程库同步到本地" class="headerlink" title="远程库同步到本地"></a>远程库同步到本地</h3><p>► 在提交更新以前都要先同步一下本地仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull   等同于 git fetch + git merge</span><br></pre></td></tr></table></figure></p>
 <p>如果需要放弃本地修改，强制覆盖本地版本的话（即保持与远程库一致）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git fetch --all</span><br><span class="line">git reset --hard origin/master</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure></p>
 <h3 id="提交本地更新到远程库"><a href="#提交本地更新到远程库" class="headerlink" title="提交本地更新到远程库"></a>提交本地更新到远程库</h3><p><code>git status</code> 检查当前项目状态</p>
 <p>然后对于未跟踪的文件执行以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add untrack-file-path  // 跟踪单个本地文件，提交到暂存区</span><br><span class="line">git commit -m &quot;your commit&quot; // 将跟踪过的文件即在暂存区的文件提交到本地仓库</span><br><span class="line">git push                    // 将本地仓库提交到远程库</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add untrack-file-path    跟踪单个本地文件，提交到暂存区</span><br><span class="line">git commit -m &quot;your commit&quot;  将跟踪过的文件即在暂存区的文件提交到本地仓库</span><br><span class="line">git push                     将本地仓库提交到远程库</span><br></pre></td></tr></table></figure>
 <p>提交到远程库常用的命令还有：</p>
-<p><code>git add .</code>      跟踪本地所有未跟踪的文件<br><code>git push --f</code>    强制提交更新，覆盖远程库</p>
+<p><code>git add .</code>      跟踪本地所有未跟踪的文件<br><code>git push -f</code>    强制提交更新，覆盖远程库 — 慎用！！！</p>
 <h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><p>► 将当前版本回退到已提交的版本历史中<br><code>git reset --hard HEAD^</code>   一个^号代表回退一个版本</p>
 <p>更多时候我们都会找到对应的版本号进行回退：<br>首先 <code>git log</code> 显示最近到最远的提交日志<br>如果只想显示版本号和评论信息的话可以加上 <code>--pretty=oneline</code> 参数<br>现在就可以  <code>git reset --hard version number</code>  回退到对应的版本</p>
 <p>这里还有一个常用命令：<br><code>git reflog</code> 显示你的每一次命令，对于自己命令的整理很有帮助</p>
-<h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><p>► 分情况执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 在工作区修改并且未跟踪</span><br><span class="line">git checkout -- file-path</span><br><span class="line"></span><br><span class="line">// 在工作区修改并且已跟踪</span><br><span class="line">git reset HEAD file-path  // 先撤销暂存区的修改</span><br><span class="line">git checkout -- file-path // 再撤销工作区的修改</span><br></pre></td></tr></table></figure></p>
+<h3 id="检查修改"><a href="#检查修改" class="headerlink" title="检查修改"></a>检查修改</h3><p>► 已修改，未暂存<br><code>git diff</code></p>
+<p>► 已暂存，未提交<br><code>git diff --cached</code></p>
+<p>► 已提交，未推送<br><code>git diff master origin/master</code></p>
+<h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><p>► 已修改，未暂存<br><code>git checkout -- file-path</code></p>
+<p>► 已暂存，未提交<br><code>git reset HEAD file-path</code>  先撤销暂存区的修改<br><code>git checkout -- file-path</code> 再撤销工作区的修改</p>
+<p>PS: 以上两个步骤都可以用 <code>git reset --hard</code> 完成，一步到位将修改完全恢复到未修改的状态</p>
+<p>► 已提交，未推送<br><code>git reset --hard origin/master</code>  从远程库将代码取回</p>
+<p>► 已推送<br><code>git reset --hard HEAD^</code>    先回退本地库的版本<br><code>git push -f</code>               再强制推送到远程库</p>
 
           
         
