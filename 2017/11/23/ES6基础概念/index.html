@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="let命令基本用法►用来声明变量，类似于 var，但只在 let 命令所在的代码块内有效 1234567&amp;#123;    let a = 10;    var b = 1;&amp;#125;a // ReferenceErrorb // 1 ►使用 let ，声明的变量只在块级作用域内有效，因此 for 循">
+<meta name="description" content="let命令基本用法► 用来声明变量，类似于 var，但只在 let 命令所在的代码块内有效 1234567&amp;#123;    let a = 10;    var b = 1;&amp;#125;a // ReferenceErrorb // 1 ► 使用 let ，声明的变量只在块级作用域内有效，因此 for">
 <meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ES6基础概念">
 <meta property="og:url" content="http://yoursite.com/2017/11/23/ES6基础概念/index.html">
 <meta property="og:site_name" content="fx&#39;s blog">
-<meta property="og:description" content="let命令基本用法►用来声明变量，类似于 var，但只在 let 命令所在的代码块内有效 1234567&amp;#123;    let a = 10;    var b = 1;&amp;#125;a // ReferenceErrorb // 1 ►使用 let ，声明的变量只在块级作用域内有效，因此 for 循环的计数器很适合用 let 命令 ►for 循环还有一个特别之处，设置循环变量的那部分是一个副作">
+<meta property="og:description" content="let命令基本用法► 用来声明变量，类似于 var，但只在 let 命令所在的代码块内有效 1234567&amp;#123;    let a = 10;    var b = 1;&amp;#125;a // ReferenceErrorb // 1 ► 使用 let ，声明的变量只在块级作用域内有效，因此 for 循环的计数器很适合用 let 命令 ► for 循环还有一个特别之处，设置循环变量的那部分是一">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-23T11:20:30.439Z">
+<meta property="og:updated_time" content="2017-12-02T05:12:57.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6基础概念">
-<meta name="twitter:description" content="let命令基本用法►用来声明变量，类似于 var，但只在 let 命令所在的代码块内有效 1234567&amp;#123;    let a = 10;    var b = 1;&amp;#125;a // ReferenceErrorb // 1 ►使用 let ，声明的变量只在块级作用域内有效，因此 for 循环的计数器很适合用 let 命令 ►for 循环还有一个特别之处，设置循环变量的那部分是一个副作">
+<meta name="twitter:description" content="let命令基本用法► 用来声明变量，类似于 var，但只在 let 命令所在的代码块内有效 1234567&amp;#123;    let a = 10;    var b = 1;&amp;#125;a // ReferenceErrorb // 1 ► 使用 let ，声明的变量只在块级作用域内有效，因此 for 循环的计数器很适合用 let 命令 ► for 循环还有一个特别之处，设置循环变量的那部分是一">
 
 
 
@@ -310,8 +310,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-23T19:20:30+08:00">
-                2017-11-23
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-02T13:12:57+08:00">
+                2017-12-02
               </time>
             
           </span>
@@ -338,6 +338,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -356,39 +361,39 @@
       
 
       
-        <h1 id="let命令"><a href="#let命令" class="headerlink" title="let命令"></a>let命令</h1><h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p>►用来声明变量，类似于 <strong>var</strong>，但只在 <strong>let</strong> 命令所在的代码块内有效</p>
+        <h1 id="let命令"><a href="#let命令" class="headerlink" title="let命令"></a>let命令</h1><h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p>► 用来声明变量，类似于 <strong>var</strong>，但只在 <strong>let</strong> 命令所在的代码块内有效</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    let a = 10;</span><br><span class="line">    var b = 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">a // ReferenceError</span><br><span class="line">b // 1</span><br></pre></td></tr></table></figure>
-<p>►使用 <strong>let</strong> ，声明的变量只在块级作用域内有效，因此 <strong>for</strong> 循环的计数器很适合用 <strong>let</strong> 命令</p>
-<p>►<strong>for</strong> 循环还有一个特别之处，设置循环变量的那部分是一个副作用域，而循环体内部是一个单独的子作用域</p>
+<p>► 使用 <strong>let</strong> ，声明的变量只在块级作用域内有效，因此 <strong>for</strong> 循环的计数器很适合用 <strong>let</strong> 命令</p>
+<p>► <strong>for</strong> 循环还有一个特别之处，设置循环变量的那部分是一个副作用域，而循环体内部是一个单独的子作用域</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for (let i = 0; i &lt; 3; i++) &#123;</span><br><span class="line">    let i = &apos;abs&apos;;</span><br><span class="line">    console.log(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="不存在变量提升"><a href="#不存在变量提升" class="headerlink" title="不存在变量提升"></a>不存在变量提升</h3><p>►<strong>var</strong> 命令会有变量提升，也就是变量可以在声明之前使用，值为 <strong>undefined</strong></p>
-<p>►<strong>let</strong> 命令改变了这种语法行为，它所声明的变量一定要在声明后使用，否则就报错</p>
-<h3 id="暂时性死区"><a href="#暂时性死区" class="headerlink" title="暂时性死区"></a>暂时性死区</h3><p>►只要块级作用域内存在 <strong>let</strong> 命令，它所声明的变量就绑定这个区域，不受外部的影响</p>
+<h3 id="不存在变量提升"><a href="#不存在变量提升" class="headerlink" title="不存在变量提升"></a>不存在变量提升</h3><p>► <strong>var</strong> 命令会有变量提升，也就是变量可以在声明之前使用，值为 <strong>undefined</strong></p>
+<p>► <strong>let</strong> 命令改变了这种语法行为，它所声明的变量一定要在声明后使用，否则就报错</p>
+<h3 id="暂时性死区"><a href="#暂时性死区" class="headerlink" title="暂时性死区"></a>暂时性死区</h3><p>► 只要块级作用域内存在 <strong>let</strong> 命令，它所声明的变量就绑定这个区域，不受外部的影响</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var tmp = 123;</span><br><span class="line"></span><br><span class="line">if(true) &#123;</span><br><span class="line">    tmp = &apos;abc&apos;;  //ReferenceError</span><br><span class="line">    let temp;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>►上述代码中虽然存在全局变量 <strong>tmp</strong>,但是块级作用域内 <strong>let</strong> 又声明了一个局部变量 <strong>tmp</strong>，导致后者绑定了这个块级作用域，所以在 <strong>let</strong> 声明变量之前，对 <strong>tmp</strong> 赋值都会报错</p>
-<p>►ES6 明确规定，区块中如果存在 <strong>let</strong> 和 <strong>const</strong> 命令，在语法上，这个区块就形成了”暂时性死区”</p>
-<p>►这也意味着 <strong>typeof</strong> 命令不再是一个百分百安全的操作，这样规定暂时性死区和 <strong>let</strong>、<strong>const</strong> 语句不出现变量提升，主要就是为了防止变量在声明前就使用它从而减少错误</p>
+<p>► 上述代码中虽然存在全局变量 <strong>tmp</strong>,但是块级作用域内 <strong>let</strong> 又声明了一个局部变量 <strong>tmp</strong>，导致后者绑定了这个块级作用域，所以在 <strong>let</strong> 声明变量之前，对 <strong>tmp</strong> 赋值都会报错</p>
+<p>► ES6 明确规定，区块中如果存在 <strong>let</strong> 和 <strong>const</strong> 命令，在语法上，这个区块就形成了”暂时性死区”</p>
+<p>► 这也意味着 <strong>typeof</strong> 命令不再是一个百分百安全的操作，这样规定暂时性死区和 <strong>let</strong>、<strong>const</strong> 语句不出现变量提升，主要就是为了防止变量在声明前就使用它从而减少错误</p>
 <h3 id="不可重复声明"><a href="#不可重复声明" class="headerlink" title="不可重复声明"></a>不可重复声明</h3><p>► <strong>let</strong> 不允许在相同作用域内，重复声明同一个变量，也即不能在函数内部重新声明参数</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function func(arg) &#123;</span><br><span class="line">    let arg;  //执行会报错</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function func(arg) &#123;</span><br><span class="line">    &#123;</span><br><span class="line">        let arg;  //不会报错</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="const命令"><a href="#const命令" class="headerlink" title="const命令"></a>const命令</h1><h3 id="基本用法-1"><a href="#基本用法-1" class="headerlink" title="基本用法"></a>基本用法</h3><p>►用来声明一个只读的常量，一旦声明，值就不能改变，这也意味着，<strong>const</strong> 一旦声明变量就必须立即初始化，不能留到之后再赋值，其它与 <strong>let</strong> 命令类似</p>
-<h3 id="本质"><a href="#本质" class="headerlink" title="本质"></a>本质</h3><p>►<strong>const</strong> 实际保证的，不是变量的值不能改动，而是变量所指向的内存地址不能改动</p>
+<h1 id="const命令"><a href="#const命令" class="headerlink" title="const命令"></a>const命令</h1><h3 id="基本用法-1"><a href="#基本用法-1" class="headerlink" title="基本用法"></a>基本用法</h3><p>► 用来声明一个只读的常量，一旦声明，值就不能改变，这也意味着，<strong>const</strong> 一旦声明变量就必须立即初始化，不能留到之后再赋值，其它与 <strong>let</strong> 命令类似</p>
+<h3 id="本质"><a href="#本质" class="headerlink" title="本质"></a>本质</h3><p>► <strong>const</strong> 实际保证的，不是变量的值不能改动，而是变量所指向的内存地址不能改动</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const foo = &#123;&#125;;</span><br><span class="line"></span><br><span class="line">//添加属性可以成功</span><br><span class="line">foo.prop = 123;</span><br><span class="line">foo.prop;</span><br><span class="line"></span><br><span class="line">//指向另一个对象就会报错</span><br><span class="line">foo = &#123;&#125;;</span><br></pre></td></tr></table></figure>
-<h1 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h1><h3 id="基本用法-2"><a href="#基本用法-2" class="headerlink" title="基本用法"></a>基本用法</h3><p>►ES6 允许使用“箭头”（=&gt;）定义函数</p>
+<h1 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h1><h3 id="基本用法-2"><a href="#基本用法-2" class="headerlink" title="基本用法"></a>基本用法</h3><p>► ES6 允许使用“箭头”（=&gt;）定义函数</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var f = v =&gt; v;</span><br><span class="line"></span><br><span class="line">//等同于</span><br><span class="line">var f = function(v) &#123;</span><br><span class="line">    return v;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>►如果箭头函数不需要参数或者需要多个参数，就使用圆括号</p>
+<p>► 如果箭头函数不需要参数或者需要多个参数，就使用圆括号</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var f = () =&gt; 5;</span><br><span class="line">//等同于</span><br><span class="line">var f = function() &#123;</span><br><span class="line">    return 5;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">var sum = (num1,num2) =&gt; num1 + num2;</span><br><span class="line">//等同于</span><br><span class="line">var sum = function(num1,num2) &#123;</span><br><span class="line">    return num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>►代码块多于一条语句的话就要用大括号括起来并且使用 <strong>return</strong> 语句返回</p>
-<p>►由于大括号被解释为代码块，所以箭头函数返回的是一个对象的话，必须在对象外面加上括号</p>
+<p>► 代码块多于一条语句的话就要用大括号括起来并且使用 <strong>return</strong> 语句返回</p>
+<p>► 由于大括号被解释为代码块，所以箭头函数返回的是一个对象的话，必须在对象外面加上括号</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var getTempItem = id =&gt; (&#123; id: id, name: &quot;Temp&quot;&#125;);</span><br><span class="line">//等同于</span><br><span class="line">var getTempItem = function(id) &#123;</span><br><span class="line">    return &#123; id: id, name: &quot;Temp&quot;&#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>►箭头函数使表达式更简洁<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const isEven = n =&gt; n % 2 == 0;</span><br><span class="line">const square = n =&gt; n * n;</span><br></pre></td></tr></table></figure></p>
-<p>►其它用途…</p>
-<h3 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h3><p>►函数体内的 <strong>this</strong> 对象，就是定义时所在的对象，而不是使用时所在的对象</p>
-<p>►不可以当作构造函数，即不能使用 <strong>new</strong> 命令</p>
-<p>►没有 <strong>arguments</strong> 对象，需要的话可以用 <strong>rest</strong> 参数代替</p>
-<p>►不能使用 <strong>yield</strong> 命令，所以箭头函数不能用作 <strong>Generator</strong> 函数</p>
+<p>► 箭头函数使表达式更简洁<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const isEven = n =&gt; n % 2 == 0;</span><br><span class="line">const square = n =&gt; n * n;</span><br></pre></td></tr></table></figure></p>
+<p>► 其它用途…</p>
+<h3 id="使用注意点"><a href="#使用注意点" class="headerlink" title="使用注意点"></a>使用注意点</h3><p>► 函数体内的 <strong>this</strong> 对象，就是定义时所在的对象，而不是使用时所在的对象</p>
+<p>► 不可以当作构造函数，即不能使用 <strong>new</strong> 命令</p>
+<p>► 没有 <strong>arguments</strong> 对象，需要的话可以用 <strong>rest</strong> 参数代替</p>
+<p>► 不能使用 <strong>yield</strong> 命令，所以箭头函数不能用作 <strong>Generator</strong> 函数</p>
 <p>尤其注意第一点，在箭头函数中 <strong>this</strong> 对象的指向是固定的</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function foo() &#123;</span><br><span class="line">    setTimeout(() =&gt; &#123;</span><br><span class="line">        console.log(&apos;id:&apos;, this.id);</span><br><span class="line">    &#125;,100);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var id = 21;</span><br><span class="line"></span><br><span class="line">foo.call(&#123; id: 42 &#125;);  // id: 42</span><br></pre></td></tr></table></figure>
-<p>►上例中 <strong>setTimeout</strong> 的参数是一个箭头函数，它的定义生效在  <strong>foo</strong> 函数生成时，真正执行就要等到100ms后，如果是普通函数的话，执行时 <strong>this</strong> 应该指向全局对象 <strong>window</strong> ，即输出 <strong>21</strong> ，但箭头函数导致this总是指向函数定义生效时所在的对象( <strong>{id: 42}</strong> )，所以输出 <strong>42</strong> .</p>
+<p>► 上例中 <strong>setTimeout</strong> 的参数是一个箭头函数，它的定义生效在  <strong>foo</strong> 函数生成时，真正执行就要等到100ms后，如果是普通函数的话，执行时 <strong>this</strong> 应该指向全局对象 <strong>window</strong> ，即输出 <strong>21</strong> ，但箭头函数导致this总是指向函数定义生效时所在的对象( <strong>{id: 42}</strong> )，所以输出 <strong>42</strong> .</p>
 <p>► <strong>this</strong> 指向的固定化，不是箭头函数内部有这样的机制，而是它没有自己的 <strong>this</strong>，所以它内部的 <strong>this</strong> 就是外层代码块的 <strong>this</strong> ,这也是它不能用作构造函数的原因</p>
 <p>所以箭头函数转换成ES5的代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function foo() &#123;</span><br><span class="line">    setTimeout(() =&gt; &#123;</span><br><span class="line">        console.log(&apos;id: &apos;,this.id);</span><br><span class="line">    &#125;,100);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function foo() &#123;</span><br><span class="line">    var _this = this;</span><br><span class="line">    setTimeout(function() &#123;</span><br><span class="line">        console.log(&apos;id: &apos;,_this.id);</span><br><span class="line">    &#125;,100);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -539,7 +544,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -552,7 +557,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -651,6 +656,26 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
 
 
