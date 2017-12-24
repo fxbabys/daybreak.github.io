@@ -654,7 +654,7 @@ in操作符        ---&gt;只要存在就返回true
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/23/Hexo-blog/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/23/函数防抖与函数节流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Day Break">
@@ -673,7 +673,7 @@ in操作符        ---&gt;只要存在就返回true
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/11/23/Hexo-blog/" itemprop="url">Hexo + Github Pages搭建你的博客</a></h1>
+                <a class="post-title-link" href="/2017/11/23/函数防抖与函数节流/" itemprop="url">函数防抖与函数节流</a></h1>
         
 
         <div class="post-meta">
@@ -689,7 +689,7 @@ in操作符        ---&gt;只要存在就返回true
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-23T23:07:19+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-11-23T19:20:18+08:00">
                 2017-11-23
               </time>
             
@@ -705,8 +705,8 @@ in操作符        ---&gt;只要存在就返回true
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/11/23/Hexo-blog/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="2017/11/23/Hexo-blog/" itemprop="commentsCount"></span>
+                <a href="/2017/11/23/函数防抖与函数节流/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2017/11/23/函数防抖与函数节流/" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
@@ -737,32 +737,28 @@ in操作符        ---&gt;只要存在就返回true
       
         
           
-            <p>一开始自己用hexo搭博客的时候踩了比较多坑，在这里想总结一下做一个简单的搭建教程，后续使用再慢慢完善</p>
-<h1 id="初始配置环境"><a href="#初始配置环境" class="headerlink" title="初始配置环境"></a>初始配置环境</h1><ul>
-<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">node</a> 作用：生成静态页面</li>
-<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> 作用：将本地的hexo内容提交到github上</li>
-<li><a href="https://github.com/" target="_blank" rel="noopener">申请Github</a> 作用：作为博客的远程仓库和服务器</li>
-</ul>
-<h1 id="Hexo的安装及初始化"><a href="#Hexo的安装及初始化" class="headerlink" title="Hexo的安装及初始化"></a>Hexo的安装及初始化</h1><p>环境配置好后，创建一个文件夹，进入后执行以下命令：</p>
-<ul>
-<li><code>npm install hexo-cli -g</code> 安装hexo</li>
-<li><code>hexo init</code> 初始化</li>
-<li><code>npm install</code></li>
-<li><code>hexo generate</code> 生成静态页面</li>
-<li><code>hexo server</code> 启动本地服务<br>之后浏览器输入<a href="http://localhost:4000" target="_blank" rel="noopener">localhost:4000</a> 就可以看到一个默认的hexo博客啦</li>
-</ul>
-<h1 id="Github上的配置"><a href="#Github上的配置" class="headerlink" title="Github上的配置"></a>Github上的配置</h1><p>进入Github新建一个仓库，这里特别要强调的是仓库名的格式必须为yourusername.github.io，yourusername就是你的Github用户名，这里错误的话，之后直接访问就会404（我就是这样o(╥﹏╥)o）,建好以后就clone一下HTTPS形式的url（这里先不用SSH）</p>
-<h1 id="本地Hexo文件的修改"><a href="#本地Hexo文件的修改" class="headerlink" title="本地Hexo文件的修改"></a>本地Hexo文件的修改</h1><p>进入Hexo文件根目录下的_config.yml，打开以后拉到最下面的deploy那里，改成如下形式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/fxbabys/fxbabys.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-<p>这里也特别要强调的是冒号后面一定要加空格</p>
-<p>然后执行命令安装: <code>npm install hexo-deployer-git --save</code><br>再执行配置命令: <code>hexo deploy</code><br>这样本地文件就上传到Github远程库上了，访问<a href="https://fxbabys.github.io/" target="_blank" rel="noopener">https://fxbabys.github.io/</a>就行了</p>
-<p>之后每次部署发布文章可以按下面的步骤进行：</p>
-<ul>
-<li><code>hexo new &quot;文章名称&quot;</code> 这样会在source/_posts下生成一个md文档</li>
-<li><code>hexo server(hexo s)</code> 上传前本地先预览一下效果</li>
-<li><code>hexo generate(hexo g)</code></li>
-<li><code>hexo deploy(hexo d)</code></li>
-</ul>
-<p>到这里搭建一个hexo博客和发布新文章就完成啦！<br>更个性化的设置可以自己去<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>官方文档上查看，介绍的都很详细，也可以去网上找教程再多折腾一些自己的喜好（(<em>^▽^</em>)）</p>
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>► 实际开发中以下场景往往由于事件频繁被触发，从而频繁执行DOM操作、资源加载等行为，导致页面卡顿甚至浏览器崩溃：</p>
+<ol>
+<li><p>window对象的 resize、scroll 事件</p>
+</li>
+<li><p>拖拽时的 mousemove 事件</p>
+</li>
+<li><p>射击游戏中的 mousedown、keydown 事件</p>
+</li>
+<li><p>文字输入、自动完成的 keyup 事件</p>
+</li>
+</ol>
+<p>► 对于 window 的 resize 事件，实际需求一般是停止改变大小n毫秒后执行；而其它事件一般是以一定的频率执行。</p>
+<p>► 针对这两种需求就出现了 debounce (防抖) 和 throttle (节流) 两种解决办法</p>
+<h2 id="函数防抖"><a href="#函数防抖" class="headerlink" title="函数防抖"></a>函数防抖</h2><p>► 如果用手一直按住一个弹簧，它将不会弹起直到你松手为止，也就是调用动作n毫秒后才会执行该动作，如果n毫秒内再次调用则重新计算执行时间</p>
+<p>简单实现： debounce 方法接收两个参数，一个是需要防抖动的函数 <strong>fn</strong> ，另一个是延迟时间 <strong>delay</strong></p>
+<p><img src="http://i2.bvimg.com/603805/e072301856d82602.png" alt="Markdown"></p>
+<h2 id="函数节流"><a href="#函数节流" class="headerlink" title="函数节流"></a>函数节流</h2><p>► 将水龙头拧到水以水滴的形式流出，每隔一段时间就有一滴水流出，也就是预先设定一个执行周期，调用动作的时刻不小于这个执行周期就执行它</p>
+<p>简单实现：throttle 方法也是接收两个参数，一个是需要节流的函数 <strong>fn</strong> ，另一个是函数执行间隔阈值 <strong>threshhold</strong></p>
+<p><img src="http://i2.bvimg.com/603805/a203d2e6fc4b12f0.png" alt="Markdown"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>可以参考一下防抖和节流与正常触发的对比效果图：<br><img src="http://i2.bvimg.com/603805/d32393a66dcf73c1.png" alt="Markdown"></p>
+<p>► debounce 可以想象成把很多事件压缩成了一个事件，throttle 可以想象成像阀门一样定时打开调节流量</p>
+<p>► 简单来说，debounce 适合只执行一次的情况，比如 搜索框的自动完成：在停止输入后才提交一次ajax请求； throttle 适合每隔一定时间间隔内执行不超过一次的情况，比如 拖动滚动条、移动鼠标、滚轮事件的处理等</p>
 
           
         
