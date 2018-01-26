@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Web," />
+  <meta name="keywords" content="Linux," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="在书上看到了关于Web性能优化方面的知识，这里先记录下来，方便以后加以实践~ Web性能优化分为服务器端和浏览器端两个方面：  压缩源码和图片► JavaScript文件源代码可以采用混淆压缩的方式► CSS文件源码可以进行普通压缩► JPG图片可以根据具体质量来压缩为50%-70%► PNG可以使用一些开源压缩软件来">
-<meta name="keywords" content="Web">
+<meta name="description" content="最近在虚拟机里装了centos7来配置lamp服务器，其中踩了好多好多……坑o(╥﹏╥)o，必须做个记录 centos7安装 这里就是网上下好iso镜像，然后一步步装好，建议初学者选GNONE桌面版方便操作  Apache、Mysql、PHP安装 Apacheapache软件包名称叫做httpdyum install ">
+<meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Web性能优化">
-<meta property="og:url" content="http://yoursite.com/2017/12/02/Web性能优化/index.html">
+<meta property="og:title" content="Centos7搭建Web服务器">
+<meta property="og:url" content="http://yoursite.com/2018/01/18/Centos7搭建Web服务器/index.html">
 <meta property="og:site_name" content="fx&#39;s blog">
-<meta property="og:description" content="在书上看到了关于Web性能优化方面的知识，这里先记录下来，方便以后加以实践~ Web性能优化分为服务器端和浏览器端两个方面：  压缩源码和图片► JavaScript文件源代码可以采用混淆压缩的方式► CSS文件源码可以进行普通压缩► JPG图片可以根据具体质量来压缩为50%-70%► PNG可以使用一些开源压缩软件来压缩，比如24色变成8色、去掉一些PNG格式信息等  选择合适的图片格式► 如果">
+<meta property="og:description" content="最近在虚拟机里装了centos7来配置lamp服务器，其中踩了好多好多……坑o(╥﹏╥)o，必须做个记录 centos7安装 这里就是网上下好iso镜像，然后一步步装好，建议初学者选GNONE桌面版方便操作  Apache、Mysql、PHP安装 Apacheapache软件包名称叫做httpdyum install httpd出现提示时一路 y+回车 就好   启动Apache并将其设置为开机启">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-02T05:22:27.090Z">
+<meta property="og:updated_time" content="2018-01-26T15:18:45.524Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Web性能优化">
-<meta name="twitter:description" content="在书上看到了关于Web性能优化方面的知识，这里先记录下来，方便以后加以实践~ Web性能优化分为服务器端和浏览器端两个方面：  压缩源码和图片► JavaScript文件源代码可以采用混淆压缩的方式► CSS文件源码可以进行普通压缩► JPG图片可以根据具体质量来压缩为50%-70%► PNG可以使用一些开源压缩软件来压缩，比如24色变成8色、去掉一些PNG格式信息等  选择合适的图片格式► 如果">
+<meta name="twitter:title" content="Centos7搭建Web服务器">
+<meta name="twitter:description" content="最近在虚拟机里装了centos7来配置lamp服务器，其中踩了好多好多……坑o(╥﹏╥)o，必须做个记录 centos7安装 这里就是网上下好iso镜像，然后一步步装好，建议初学者选GNONE桌面版方便操作  Apache、Mysql、PHP安装 Apacheapache软件包名称叫做httpdyum install httpd出现提示时一路 y+回车 就好   启动Apache并将其设置为开机启">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/12/02/Web性能优化/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/01/18/Centos7搭建Web服务器/"/>
 
 
 
 
 
-  <title>Web性能优化 | fx's blog</title>
+  <title>Centos7搭建Web服务器 | fx's blog</title>
   
 
 
@@ -277,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/02/Web性能优化/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/18/Centos7搭建Web服务器/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Day Break">
@@ -294,7 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Web性能优化</h1>
+          <h1 class="post-title" itemprop="name headline">Centos7搭建Web服务器</h1>
         
 
         <div class="post-meta">
@@ -310,8 +310,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-12-02T13:22:27+08:00">
-                2017-12-02
+              <time title="更新于" itemprop="dateModified" datetime="2018-01-26T23:18:45+08:00">
+                2018-01-26
               </time>
             
           </span>
@@ -326,8 +326,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/12/02/Web性能优化/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="2017/12/02/Web性能优化/" itemprop="commentsCount"></span>
+                <a href="/2018/01/18/Centos7搭建Web服务器/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2018/01/18/Centos7搭建Web服务器/" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
@@ -361,24 +361,35 @@
       
 
       
-        <p>在书上看到了关于Web性能优化方面的知识，这里先记录下来，方便以后加以实践~</p>
-<p>Web性能优化分为服务器端和浏览器端两个方面：</p>
-<ul>
-<li><p>压缩源码和图片<br>► JavaScript文件源代码可以采用混淆压缩的方式<br>► CSS文件源码可以进行普通压缩<br>► JPG图片可以根据具体质量来压缩为50%-70%<br>► PNG可以使用一些开源压缩软件来压缩，比如24色变成8色、去掉一些PNG格式信息等</p>
+        <p>最近在虚拟机里装了centos7来配置lamp服务器，其中踩了好多好多……坑o(╥﹏╥)o，必须做个记录</p>
+<h3 id="centos7安装"><a href="#centos7安装" class="headerlink" title="centos7安装"></a>centos7安装</h3><ul>
+<li>这里就是网上下好iso镜像，然后一步步装好，建议初学者选GNONE桌面版方便操作</li>
+</ul>
+<h3 id="Apache、Mysql、PHP安装"><a href="#Apache、Mysql、PHP安装" class="headerlink" title="Apache、Mysql、PHP安装"></a>Apache、Mysql、PHP安装</h3><ul>
+<li><p>Apache<br>apache软件包名称叫做httpd<br><code>yum install httpd</code><br>出现提示时一路 y+回车 就好</p>
+<p>  启动Apache并将其设置为开机启动<br>  <code>systemctl start httpd.service</code><br>  <code>systemctl enable httpd.service</code><br>  检查httpd服务状态：<br>  <code>systemctl status httpd.service</code><br>  看到绿色的<code>active(running)</code>表示httpd服务正在运行中，<code>enabled</code>  表示httpd服务已设为开机启动</p>
+<p>  这样HTTP协议就启动了，因为它要用到端口80，因此防火墙要放通80，这里直接就关掉它<br>  <code>systemctl stop firewalld.service</code> 停止firewall<br>  <code>systemctl disable firewalld.service</code> 禁止开机启动</p>
+<p>  现在可以通过<code>ip addr</code>查询当前系统ip地址，在浏览器访问就可以看到apache页面<br>  Tips: 这里可以将虚拟机内部ip配置为静态的，然后修改主机hosts文件对应别名如myserver之后即可通过<a href="http://myserver直接访问" target="_blank" rel="noopener">http://myserver直接访问</a></p>
 </li>
-<li><p>选择合适的图片格式<br>► 如果图片颜色数较多就使用JPG格式<br>► 如果图片颜色数较少就使用PNG格式<br>► 如果能够通过服务器端判断浏览器支持WebP，就使用WebP格式和SVG格式</p>
+<li><p>PHP<br><code>yum install php</code><br>这里有需要的话可以进入<code>/etc/php.ini</code>做一些配置的修改<br>测试Apache能不能正常调用php，在/var/www/html目录下新建一个输出phpinfo的文件<br><code>vim /var/www/html/phpinfo.php</code><br>使用浏览器打开可以看到php信息页则说明正常<br>然后安装常用的扩展<br><code>yum -y install php-mysql php-gd php-imap php-ldap php-mbstring php-odbc php-pear php-xml php-xmlrpc</code></p>
 </li>
-<li><p>合并静态资源<br>► 包括CSS、JavaScript和小图片，减少HTTP请求</p>
-</li>
-<li><p>开启服务器端的Gzip压缩<br>► 对于文本资源非常有效，对图片资源则没那么大的压缩比率</p>
-</li>
-<li><p>使用CDN<br>► 或者一些公开库使用第三方提供的静态资源地址（比如jQuery、normalize、css）。一方面增加并发下载量，另一方面能够和其他网站共享缓存</p>
-</li>
-<li><p>延长静态资源缓存时间<br>► 这样频繁访问网站的访客就可以更快地访问。但是这里要通过修改文件名的方式，确保资源更新的时候，用户会拉取到最新的内容</p>
-</li>
-<li><p>把CSS放在页面头部，JavaScript放在页面底部<br>► 这样就不会阻塞页面渲染，让页面出现长时间的空白</p>
+<li><p>Mysql<br>这里推荐安装MariaDB(从RHEL 7开始Red Hat公司推荐使用它替换Mysql)<br><code>yum install mariadb-server mariadb</code><br><code>systemctl start mariadb</code> 启动mariadb<br><code>systemctl enable mariadb</code> 设置为开机启动</p>
+<p>  这里可以启动数据库守护进程<br>  <code>mysql_secure_installation</code><br>  用来设置root密码，允许远程root登录等等</p>
+<p>  <code>mysql -u root -p</code>使用root账号登录mariadb<br>  <code>show mysql</code>切换到mysql<br>  <code>GRANT ALL PRIVILEGES ON *.* TO &#39;root&#39;@&#39;%&#39; IDENTIFIED BY &#39;password&#39; WITH GRANT OPTION;</code> 修改登录权限设置为允许远程登录</p>
 </li>
 </ul>
+<h3 id="配置apache虚拟目录"><a href="#配置apache虚拟目录" class="headerlink" title="配置apache虚拟目录"></a>配置apache虚拟目录</h3><p>apache默认工程目录是在/var/www下的，而编辑该目录必须是root用户，因此我们有必要自定义一个目录，让apache也能识别<br><code>vim /etc/httpd/conf/httpd.conf</code>打开apache配置文件<br>找到<code>&lt;dir alias_module&gt;</code>，在内部添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">示例：</span><br><span class="line">Alias /myweb &quot;/home/daybreak/www&quot;</span><br><span class="line">&lt;Directory &quot;/home/daybreak/www&quot;&gt;</span><br><span class="line">    Options Indexes FollowSymLinks</span><br><span class="line">    AllowOverride None</span><br><span class="line">    Require all granted</span><br><span class="line">&lt;/Directory&gt;</span><br></pre></td></tr></table></figure></p>
+<p>这里我的自定义路径为/home/daybreak/www，对应别名是myweb，在浏览器输入<code>http&quot;//myserver/myweb</code>就能对真实目录/home/daybreak/www下文件进行访问</p>
+<p>注意：这里直接访问后很可能会出现403forbidden的错误，解决方案如下</p>
+<ol>
+<li>确保配置虚拟目录时设置了目录访问权限即<code>Require all granted</code></li>
+<li><p>到这里可能是网站目录的权限问题，apache要求目录具有执行权限，也就是x，所以要确保访问的目录树都具有这些权限，例如我的目录时/home/daybreak/www，则需要</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">chmod 755 /home</span><br><span class="line">chmod 755 /home/daybreak</span><br><span class="line">chmod 755 /home/daybreak/www</span><br><span class="line">或者直接 chmod 755 -R /home</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果依然是403，那就是selinux的问题，把目录进行一下selinux权限设置<br><code>chcon -R -t httpd_sys_content_t /home</code></p>
+</li>
+</ol>
+<p>这样访问成功后就可以通过自定义的目录访问web文档</p>
 
       
     </div>
@@ -396,7 +407,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Web/" rel="tag"># Web</a>
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
           
         </div>
       
@@ -409,8 +420,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/30/Git常用操作/" rel="next" title="Git常用操作">
-                <i class="fa fa-chevron-left"></i> Git常用操作
+              <a href="/2017/12/29/异步JavaScript请求/" rel="next" title="异步JavaScript请求">
+                <i class="fa fa-chevron-left"></i> 异步JavaScript请求
               </a>
             
           </div>
@@ -419,8 +430,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/12/29/异步JavaScript请求/" rel="prev" title="异步JavaScript请求">
-                异步JavaScript请求 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/01/22/HTTP协议/" rel="prev" title="HTTP协议">
+                HTTP协议 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -478,8 +489,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -556,6 +576,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#centos7安装"><span class="nav-number">1.</span> <span class="nav-text">centos7安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Apache、Mysql、PHP安装"><span class="nav-number">2.</span> <span class="nav-text">Apache、Mysql、PHP安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置apache虚拟目录"><span class="nav-number">3.</span> <span class="nav-text">配置apache虚拟目录</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -737,7 +773,7 @@
 		_hcwp.push({widget:"Bloggerstream", widget_id: 98151, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
 		
-		_hcwp.push({widget:"Stream", widget_id: 98151, xid: "2017/12/02/Web性能优化/"});
+		_hcwp.push({widget:"Stream", widget_id: 98151, xid: "2018/01/18/Centos7搭建Web服务器/"});
 		
 
 		(function() {
