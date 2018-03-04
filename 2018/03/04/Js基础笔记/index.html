@@ -75,18 +75,18 @@
 
 
 
-<meta name="description" content="Github关于js面试题的知识整理，这里慢慢积累~ 1.解释事件委托 事件委托是一种利用事件冒泡机制，只监听父元素而不用监听每个子元素的技术。 优点：只有父元素需要一个监听器，不需要每个子元素都去监听，减少了内存占用 ​       避免了对子元素的繁杂处理，可以只针对父元素进行处理 例子：  e.target 点击">
+<meta name="description" content="Github关于js面试题的知识整理，这里慢慢积累~ 解释事件委托事件委托是一种利用事件冒泡机制，只监听父元素而不用监听每个子元素的技术。 优点：只有父元素需要一个监听器，不需要每个子元素都去监听，减少了内存占用 ​       避免了对子元素的繁杂处理，可以只针对父元素进行处理 例子：  e.target 点击元素 ">
 <meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Js基础笔记">
 <meta property="og:url" content="http://yoursite.com/2018/03/04/Js基础笔记/index.html">
 <meta property="og:site_name" content="Jeremy&#39;s blog">
-<meta property="og:description" content="Github关于js面试题的知识整理，这里慢慢积累~ 1.解释事件委托 事件委托是一种利用事件冒泡机制，只监听父元素而不用监听每个子元素的技术。 优点：只有父元素需要一个监听器，不需要每个子元素都去监听，减少了内存占用 ​       避免了对子元素的繁杂处理，可以只针对父元素进行处理 例子：  e.target 点击元素 e.currentTarget 当前元素  123456789101112">
+<meta property="og:description" content="Github关于js面试题的知识整理，这里慢慢积累~ 解释事件委托事件委托是一种利用事件冒泡机制，只监听父元素而不用监听每个子元素的技术。 优点：只有父元素需要一个监听器，不需要每个子元素都去监听，减少了内存占用 ​       避免了对子元素的繁杂处理，可以只针对父元素进行处理 例子：  e.target 点击元素 e.currentTarget 当前元素  123456789101112131">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-04T13:43:59.131Z">
+<meta property="og:updated_time" content="2018-03-04T14:16:02.474Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Js基础笔记">
-<meta name="twitter:description" content="Github关于js面试题的知识整理，这里慢慢积累~ 1.解释事件委托 事件委托是一种利用事件冒泡机制，只监听父元素而不用监听每个子元素的技术。 优点：只有父元素需要一个监听器，不需要每个子元素都去监听，减少了内存占用 ​       避免了对子元素的繁杂处理，可以只针对父元素进行处理 例子：  e.target 点击元素 e.currentTarget 当前元素  123456789101112">
+<meta name="twitter:description" content="Github关于js面试题的知识整理，这里慢慢积累~ 解释事件委托事件委托是一种利用事件冒泡机制，只监听父元素而不用监听每个子元素的技术。 优点：只有父元素需要一个监听器，不需要每个子元素都去监听，减少了内存占用 ​       避免了对子元素的繁杂处理，可以只针对父元素进行处理 例子：  e.target 点击元素 e.currentTarget 当前元素  123456789101112131">
 
 
 
@@ -306,7 +306,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-03-04T21:43:59+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-04T22:16:02+08:00">
                 2018-03-04
               </time>
             
@@ -358,8 +358,7 @@
 
       
         <p>Github关于js面试题的知识整理，这里慢慢积累~</p>
-<p>1.解释事件委托</p>
-<p>事件委托是一种利用事件冒泡机制，只监听父元素而不用监听每个子元素的技术。</p>
+<h3 id="解释事件委托"><a href="#解释事件委托" class="headerlink" title="解释事件委托"></a>解释事件委托</h3><p>事件委托是一种利用事件冒泡机制，只监听父元素而不用监听每个子元素的技术。</p>
 <p>优点：只有父元素需要一个监听器，不需要每个子元素都去监听，减少了内存占用</p>
 <p>​       避免了对子元素的繁杂处理，可以只针对父元素进行处理</p>
 <p>例子：</p>
@@ -368,8 +367,7 @@
 <li>e.currentTarget 当前元素</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    #par &#123;</span><br><span class="line">      background: blue;</span><br><span class="line">      width: 100px;</span><br><span class="line">      height: 600px;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;par&quot;&gt;</span><br><span class="line">      &lt;div id=&quot;child1&quot;&gt;Item 1&lt;/div&gt;</span><br><span class="line">      &lt;div id=&quot;child2&quot;&gt;Item 2&lt;/div&gt;</span><br><span class="line">      &lt;div id=&quot;child3&quot;&gt;Item 3&lt;/div&gt;</span><br><span class="line">      &lt;div id=&quot;child4&quot;&gt;Item 4&lt;/div&gt;</span><br><span class="line">      &lt;div id=&quot;child5&quot;&gt;Item 5&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    document.getElementById(&quot;par&quot;)</span><br><span class="line">            .addEventListener(&quot;click&quot;, function(e) &#123;</span><br><span class="line">              console.log(e.target);</span><br><span class="line">              console.log(e.currentTarget);</span><br><span class="line">    &#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<p>2.解释js中的this如何工作</p>
-<p>关键：this的值取决于函数怎样被调用</p>
+<h3 id="解释js中的this如何工作"><a href="#解释js中的this如何工作" class="headerlink" title="解释js中的this如何工作"></a>解释js中的this如何工作</h3><p>关键：this的值取决于函数怎样被调用</p>
 <ul>
 <li><p>使用了 <code>new</code> ，则 <code>this</code> 指向函数内部</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function Constructor() &#123;</span><br><span class="line">   console.log(this);</span><br><span class="line">   this.value = 10;</span><br><span class="line">   console.log(this);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">new Constructor();</span><br><span class="line">// Constructor&#123;&#125;</span><br><span class="line">// Constructor&#123;value: 10&#125;</span><br></pre></td></tr></table></figure>
@@ -389,27 +387,23 @@
 </li>
 </ul>
 <p>扩展：<a href="https://codeburst.io/the-simple-rules-to-this-in-javascript-35d97f31bde3" target="_blank" rel="noopener">this</a></p>
-<p>3.解释原型继承如何工作</p>
-<p>所有的js对象都有一个 <code>prototype</code> 属性，指向这个对象的原型对象</p>
+<h3 id="解释原型继承如何工作"><a href="#解释原型继承如何工作" class="headerlink" title="解释原型继承如何工作"></a>解释原型继承如何工作</h3><p>所有的js对象都有一个 <code>prototype</code> 属性，指向这个对象的原型对象</p>
 <ul>
 <li>当一个属性被访问时，如果直接存在这个对象中则输出</li>
 <li>如果不存在这个对象中则通过原型链去找它的原型对象，直到找到这个属性或者原型链末端</li>
 <li>这个机制模拟了经典的继承但实际上更像是委托</li>
 </ul>
-<p>4.对于AMD和CommonJS如何认识</p>
-<p>两种方式都是用来实现模块系统，这个概念直到ES6才在js中出现</p>
+<h3 id="对于AMD和CommonJS如何认识"><a href="#对于AMD和CommonJS如何认识" class="headerlink" title="对于AMD和CommonJS如何认识"></a>对于AMD和CommonJS如何认识</h3><p>两种方式都是用来实现模块系统，这个概念直到ES6才在js中出现</p>
 <ul>
 <li>CommonJS是同步的，为了服务端开发而设计，语法更接近于其它语言的风格，同时使用服务器端与浏览器端开发之间js切换开销也更小</li>
 <li>AMD是异步的，支持异步加载模块，更像是为了浏览器端开发而设计，但是语法风格冗杂，而且大部分时候不是必要的，特别是js只放在一个模块包时</li>
 <li>ES6中支持同步与异步加载模块，使得我们可以坚持用一种方法，虽然现在并没有在浏览器与Node端完全展开，但我们可以使用转换程序来转换代码</li>
 </ul>
-<p>5.解释<code>function foo(){}()</code> 为什么没有像IIFE一样工作，需要修改哪些内容才能使它成为一个IIFE</p>
-<p>IIFE 的含义是立即执行函数表达式，js解析器读取 <code>function foo(){}()</code> 成 <code>function foo(){}</code> 和 <code>()</code> ，前者是一个函数声明而后者是一个括号尝试调用一个函数但是并没有特别声明，因此会报错</p>
+<h3 id="解释function-foo-为什么没有像IIFE一样工作，需要修改哪些内容才能使它成为一个IIFE"><a href="#解释function-foo-为什么没有像IIFE一样工作，需要修改哪些内容才能使它成为一个IIFE" class="headerlink" title="解释function foo(){}() 为什么没有像IIFE一样工作，需要修改哪些内容才能使它成为一个IIFE"></a>解释<code>function foo(){}()</code> 为什么没有像IIFE一样工作，需要修改哪些内容才能使它成为一个IIFE</h3><p>IIFE 的含义是立即执行函数表达式，js解析器读取 <code>function foo(){}()</code> 成 <code>function foo(){}</code> 和 <code>()</code> ，前者是一个函数声明而后者是一个括号尝试调用一个函数但是并没有特别声明，因此会报错</p>
 <ul>
 <li>修改：<code>(function foo() {})()</code>  or <code>(function foo() {}())</code>  它们不会在全局范围内公开，所以我们甚至可以省略 <code>foo</code> </li>
 </ul>
-<p>6.<code>null</code>  <code>undefined</code>  <code>undeclared</code> 之间的区别，怎样检查它们</p>
-<ul>
+<h3 id="null-undefined-undeclared-之间的区别，怎样检查它们"><a href="#null-undefined-undeclared-之间的区别，怎样检查它们" class="headerlink" title="null  undefined  undeclared 之间的区别，怎样检查它们"></a><code>null</code>  <code>undefined</code>  <code>undeclared</code> 之间的区别，怎样检查它们</h3><ul>
 <li><p><code>undeclared</code> 变量是创建一个变量赋值时没有使用 <code>var</code> <code>let</code> 或 <code>const</code> ，这会导致它成为一个全局变量，在严格模式下会报 <code>ReferenceError</code> ，所以尽量避免使用，可以将它放入 try/catch块中检查</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function foo() &#123;</span><br><span class="line">  x = 1; // Throws a ReferenceError in strict mode</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">foo();</span><br><span class="line">console.log(x); // 1</span><br></pre></td></tr></table></figure>
 </li>
@@ -420,8 +414,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var foo = null;</span><br><span class="line">console.log(foo === null); // true</span><br><span class="line"></span><br><span class="line">console.log(foo == undefined); // true. Wrong, don&apos;t use this to check!</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>7.解释闭包，如何使用</p>
-<p>闭包是函数与函数声明时词法作用域的结合，词法的意思是词汇范围界定使用在源代码声明变量的位置来确定变量的位置(?)，闭包就是在外部函数返回以后也可以访问外部函数中变量作用域链的函数</p>
+<h3 id="解释闭包，如何使用"><a href="#解释闭包，如何使用" class="headerlink" title="解释闭包，如何使用"></a>解释闭包，如何使用</h3><p>闭包是函数与函数声明时词法作用域的结合，词法的意思是词汇范围界定使用在源代码声明变量的位置来确定变量的位置(?)，闭包就是在外部函数返回以后也可以访问外部函数中变量作用域链的函数</p>
 <p>使用场景：</p>
 <ul>
 <li><p>用闭包实现数据隐私或是模拟private方法，模块模式中经常用到</p>
@@ -430,7 +423,7 @@
 <p>​</p>
 </li>
 </ul>
-<p>8.描述 <code>forEach</code> 和 <code>map</code> 循环的区别，如何抉择<br>forEach</p>
+<h3 id="描述-forEach-和-map-循环的区别，如何抉择"><a href="#描述-forEach-和-map-循环的区别，如何抉择" class="headerlink" title="描述 forEach 和 map 循环的区别，如何抉择"></a>描述 <code>forEach</code> 和 <code>map</code> 循环的区别，如何抉择</h3><p>forEach</p>
 <ul>
 <li><p>遍历数组中的所有元素</p>
 </li>
@@ -467,8 +460,7 @@
 </li>
 </ul>
 <p>扩展阅读：<a href="https://codeburst.io/javascript-learn-to-chain-map-filter-and-reduce-acd2d0562cd4" target="_blank" rel="noopener">map、filter、reduce</a></p>
-<p>9.匿名函数的典例</p>
-<ul>
+<h3 id="匿名函数的典例"><a href="#匿名函数的典例" class="headerlink" title="匿名函数的典例"></a>匿名函数的典例</h3><ul>
 <li><p>IIFE，避免变量泄露到全局</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(function() &#123;</span><br><span class="line">    // some code.</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
 </li>
@@ -479,8 +471,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const arr = [1, 2, 3];</span><br><span class="line">const double = arr.map(funtion(e) &#123;</span><br><span class="line">    return e*2;</span><br><span class="line">&#125;);</span><br><span class="line">console.log(double);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>10.怎样组织自己的代码，比如模块模式或者经典继承</p>
-<p>一开始会使用面向对象的方式创建Backbobe模型并添加方法</p>
+<h3 id="怎样组织自己的代码，比如模块模式或者经典继承"><a href="#怎样组织自己的代码，比如模块模式或者经典继承" class="headerlink" title="怎样组织自己的代码，比如模块模式或者经典继承"></a>怎样组织自己的代码，比如模块模式或者经典继承</h3><p>一开始会使用面向对象的方式创建Backbobe模型并添加方法</p>
 <p>但现在更好的趋势是使用基于React/Redux鼓励单向函数编程方式的Flux体系结构，使用普通对象与编写实用纯函数来操作这些对象，并且使用 actions 和 reducers 来处理状态</p>
 <p>关于经典继承的扩展阅读  <a href="https://medium.com/@dan_abramov/how-to-use-classes-and-sleep-at-night-9af8de78ccb4" target="_blank" rel="noopener">new rules</a></p>
 <p>后续学深入再重新理解这个问题 ==</p>
@@ -579,8 +570,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -657,6 +657,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#解释事件委托"><span class="nav-number">1.</span> <span class="nav-text">解释事件委托</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解释js中的this如何工作"><span class="nav-number">2.</span> <span class="nav-text">解释js中的this如何工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解释原型继承如何工作"><span class="nav-number">3.</span> <span class="nav-text">解释原型继承如何工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对于AMD和CommonJS如何认识"><span class="nav-number">4.</span> <span class="nav-text">对于AMD和CommonJS如何认识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解释function-foo-为什么没有像IIFE一样工作，需要修改哪些内容才能使它成为一个IIFE"><span class="nav-number">5.</span> <span class="nav-text">解释function foo(){}() 为什么没有像IIFE一样工作，需要修改哪些内容才能使它成为一个IIFE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null-undefined-undeclared-之间的区别，怎样检查它们"><span class="nav-number">6.</span> <span class="nav-text">null  undefined  undeclared 之间的区别，怎样检查它们</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解释闭包，如何使用"><span class="nav-number">7.</span> <span class="nav-text">解释闭包，如何使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-forEach-和-map-循环的区别，如何抉择"><span class="nav-number">8.</span> <span class="nav-text">描述 forEach 和 map 循环的区别，如何抉择</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#匿名函数的典例"><span class="nav-number">9.</span> <span class="nav-text">匿名函数的典例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#怎样组织自己的代码，比如模块模式或者经典继承"><span class="nav-number">10.</span> <span class="nav-text">怎样组织自己的代码，比如模块模式或者经典继承</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
