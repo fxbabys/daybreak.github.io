@@ -85,7 +85,8 @@
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/e4336439gy1frsgjbi5aej20j40e2aax.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/e4336439gy1frsg790v3mj20m503uaad.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/e4336439gy1frsgov5bh3j20jg07tdgl.jpg">
-<meta property="og:updated_time" content="2018-05-29T13:30:15.948Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/e4336439gy1frsgrqy6tsj20ia080t8w.jpg">
+<meta property="og:updated_time" content="2018-05-29T15:46:46.384Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深入浅出Nginx">
 <meta name="twitter:description" content="之前在自己的阿里云服务器上部署了Nginx服务主要用作node服务的代理，这里看到一篇不错的文章简记一下~ 前言Nginx是一款轻量级的Web服务器及反向代理服务器，因为内存中占用少、启动极快、高并发能力强的原因，在互联网项目中广泛应用  当下流行的技术架构，nginx有点像入口网关  代理正向代理 平时我们使用梯子访问谷歌就是一个简单的正向代理的例子，正向代理“代理”的是客户端，客户端是知道目标">
@@ -311,7 +312,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-05-29T21:30:15+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-05-29T23:46:46+08:00">
                 2018-05-29
               </time>
             
@@ -356,7 +357,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,267
+                  1,260
                 </span>
               
 
@@ -372,7 +373,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  4
                 </span>
               
             </div>
@@ -435,20 +436,30 @@
 </li>
 </ul>
 <h3 id="主战场：nginx-conf"><a href="#主战场：nginx-conf" class="headerlink" title="主战场：nginx.conf"></a>主战场：nginx.conf</h3><p>nginx.conf是典型的分段配置文件</p>
-<h4 id="虚拟主机"><a href="#虚拟主机" class="headerlink" title="虚拟主机"></a>虚拟主机</h4><pre><code>+ ![](https://ws1.sinaimg.cn/large/e4336439gy1frsgrqy6tsj20ia080t8w.jpg)
-+ 把nginx作为web server来处理静态资源
-    * location可以进行正则匹配，注意正则的几种形式以及优先级
-    * nginx能提高速度的其中一个特性：动静分离，把静态资源放到nginx上，由nginx管理，动态请求转发给后端
-    * 在nginx下将静态资源、日志文件归属到不同域名（目录）下，方便管理维护
-    * nginx可以进行ip访问控制，如有些电商平台，在nginx这一层就做了处理，内置一个黑名单模块
-</code></pre><h4 id="反向代理-1"><a href="#反向代理-1" class="headerlink" title="反向代理"></a>反向代理</h4><pre><code>+ 在location这一段配置中的root替换成proxy_pass即可
-    * root说明是静态资源，可以由nginx进行返回；而proxy_pass说明是动态请求，需要进行转发，如代理到Tomcat上
-    * 反向代理过程是透明的，比如在request-&gt;nginx-&gt;Tomcat这里对于Tomcat而言请求的ip就是nginx的地址而不是真实的request地址。好在nginx不仅仅可以反向代理请求，也可以由用户自定义设置HTTP HEADER
-</code></pre><h4 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h4><pre><code>+ 在反向代理中，通过proxy_pass来指定Tomcat的地址，这里只能指定一台Tomcat，如果想指定多台来达到负载均衡呢？
-    * 通过 upstream 来定义一组Tomcat，并指定负载策略（IPHASH、加权论调、最少连接），健康检查策略（nginx监控这一组Tomcat的状态）等
-    * 将proxy_pass换成upstream指定的值即可
-+ 带来的问题：用户状态的保存问题，如session信息不能保存到服务器上
-</code></pre><h3 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h3><p>在配置上开启，同时指定目录，让缓存可以存储到磁盘上</p>
+<h4 id="虚拟主机"><a href="#虚拟主机" class="headerlink" title="虚拟主机"></a>虚拟主机</h4><ul>
+<li><img src="https://ws1.sinaimg.cn/large/e4336439gy1frsgrqy6tsj20ia080t8w.jpg" alt=""></li>
+<li>把nginx作为web server来处理静态资源<ul>
+<li>location可以进行正则匹配，注意正则的几种形式以及优先级</li>
+<li>nginx能提高速度的其中一个特性：动静分离，把静态资源放到nginx上，由nginx管理，动态请求转发给后端</li>
+<li>在nginx下将静态资源、日志文件归属到不同域名（目录）下，方便管理维护</li>
+<li>nginx可以进行ip访问控制，如有些电商平台，在nginx这一层就做了处理，内置一个黑名单模块<h4 id="反向代理-1"><a href="#反向代理-1" class="headerlink" title="反向代理"></a>反向代理</h4></li>
+</ul>
+</li>
+<li>在location这一段配置中的root替换成proxy_pass即可<ul>
+<li>root说明是静态资源，可以由nginx进行返回；而proxy_pass说明是动态请求，需要进行转发，如代理到Tomcat上</li>
+<li>反向代理过程是透明的，比如在request-&gt;nginx-&gt;Tomcat这里对于Tomcat而言请求的ip就是nginx的地址而不是真实的request地址。好在nginx不仅仅可以反向代理请求，也可以由用户自定义设置HTTP HEADER<h4 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h4></li>
+</ul>
+</li>
+<li>在反向代理中，通过proxy_pass来指定Tomcat的地址，这里只能指定一台Tomcat，如果想指定多台来达到负载均衡呢？<ul>
+<li>通过 upstream 来定义一组Tomcat，并指定负载策略（IPHASH、加权论调、最少连接），健康检查策略（nginx监控这一组Tomcat的状态）等</li>
+<li>将proxy_pass换成upstream指定的值即可</li>
+</ul>
+</li>
+<li>带来的问题：用户状态的保存问题，如session信息不能保存到服务器上</li>
+</ul>
+<h3 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h3><ul>
+<li>在配置上开启，同时指定目录，让缓存可以存储到磁盘上</li>
+</ul>
 <p>参考：<br><a href="http://blog.51cto.com/zhangfengzhe/2064524" target="_blank" rel="noopener">http://blog.51cto.com/zhangfengzhe/2064524</a></p>
 
       
