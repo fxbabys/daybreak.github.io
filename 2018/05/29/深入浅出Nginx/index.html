@@ -75,16 +75,22 @@
 
 
 
-<meta name="description" content="仰望星空，脚踏实地，因为相信，所以看见">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jeremy&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/archives/page/2/index.html">
+<meta name="description" content="之前在自己的阿里云服务器上部署了Nginx服务主要用作node服务的代理，这里看到一篇不错的文章简记一下~ ###前言Nginx是一款轻量级的Web服务器及反向代理服务器，因为内存中占用少、启动极快、高并发能力强的原因，在互联网项目中广泛应用   当下流行的技术架构，nginx有点像入口网关   ###代理  正向代理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深入浅出Nginx">
+<meta property="og:url" content="http://yoursite.com/2018/05/29/深入浅出Nginx/index.html">
 <meta property="og:site_name" content="Jeremy&#39;s blog">
-<meta property="og:description" content="仰望星空，脚踏实地，因为相信，所以看见">
+<meta property="og:description" content="之前在自己的阿里云服务器上部署了Nginx服务主要用作node服务的代理，这里看到一篇不错的文章简记一下~ ###前言Nginx是一款轻量级的Web服务器及反向代理服务器，因为内存中占用少、启动极快、高并发能力强的原因，在互联网项目中广泛应用   当下流行的技术架构，nginx有点像入口网关   ###代理  正向代理 平时我们使用梯子访问谷歌就是一个简单的正向代理的例子，正向代理“代理”的是客户">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/e4336439gy1frsgjbi5aej20j40e2aax.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/e4336439gy1frsg790v3mj20m503uaad.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/e4336439gy1frsgov5bh3j20jg07tdgl.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/e4336439gy1frsgrqy6tsj20ia080t8w.jpg">
+<meta property="og:updated_time" content="2018-05-29T12:17:44.461Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jeremy&#39;s blog">
-<meta name="twitter:description" content="仰望星空，脚踏实地，因为相信，所以看见">
+<meta name="twitter:title" content="深入浅出Nginx">
+<meta name="twitter:description" content="之前在自己的阿里云服务器上部署了Nginx服务主要用作node服务的代理，这里看到一篇不错的文章简记一下~ ###前言Nginx是一款轻量级的Web服务器及反向代理服务器，因为内存中占用少、启动极快、高并发能力强的原因，在互联网项目中广泛应用   当下流行的技术架构，nginx有点像入口网关   ###代理  正向代理 平时我们使用梯子访问谷歌就是一个简单的正向代理的例子，正向代理“代理”的是客户">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/e4336439gy1frsgjbi5aej20j40e2aax.jpg">
 
 
 
@@ -114,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/page/2/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/29/深入浅出Nginx/"/>
 
 
 
 
 
-  <title>归档 | Jeremy's blog</title>
+  <title>深入浅出Nginx | Jeremy's blog</title>
   
 
 
@@ -141,7 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -259,337 +265,260 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/29/深入浅出Nginx/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Day Break">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/none.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jeremy's blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">深入浅出Nginx</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-05-29T20:17:44+08:00">
+                2018-05-29
+              </time>
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 18 篇日志。 继续努力。
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/29/深入浅出Nginx/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2018/05/29/深入浅出Nginx/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/30/Git常用操作/" itemprop="url">
+          
+            <div class="post-wordcount">
               
-                <span itemprop="name">Git常用操作</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,248
+                </span>
               
-            </a>
-        
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-30T22:46:08+08:00"
-              content="2017-11-30" >
-          11-30
-        </time>
-      </div>
+              
+                <span class="post-meta-divider">|</span>
+              
 
-    </header>
-  </article>
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
 
+          
 
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/29/数据结构实验参考/" itemprop="url">
-              
-                <span itemprop="name">数据结构实验参考</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-29T09:44:22+08:00"
-              content="2017-11-29" >
-          11-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/23/函数防抖与函数节流/" itemprop="url">
-              
-                <span itemprop="name">函数防抖与函数节流</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-23T19:15:07+08:00"
-              content="2017-11-23" >
-          11-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>之前在自己的阿里云服务器上部署了Nginx服务主要用作node服务的代理，这里看到一篇不错的文章简记一下~</p>
+<p>###前言<br>Nginx是一款轻量级的Web服务器及反向代理服务器，因为内存中占用少、启动极快、高并发能力强的原因，在互联网项目中广泛应用<br><img src="https://ws1.sinaimg.cn/large/e4336439gy1frsgjbi5aej20j40e2aax.jpg" alt=""></p>
+<blockquote>
+<blockquote>
+<p>当下流行的技术架构，nginx有点像入口网关</p>
+</blockquote>
+</blockquote>
+<p>###代理</p>
+<ul>
+<li>正向代理<ul>
+<li>平时我们使用梯子访问谷歌就是一个简单的正向代理的例子，正向代理“代理”的是客户端，客户端是知道目标的，但是目标不知道客户端是通过梯子访问的</li>
+<li>我们在外网访问百度时会进行一个转发代理到内网既是反向代理，反向代理“代理”的是服务器端，这一个过程对于客户端是透明的</li>
+</ul>
+</li>
+</ul>
+<p>###Master-Worker模式<br>启动Nginx后，就是在80端口启动了Socket服务进行监听，Nginx涉及Mater进程和Worker进程<br><img src="https://ws1.sinaimg.cn/large/e4336439gy1frsg790v3mj20m503uaad.jpg" alt=""></p>
+<ul>
+<li>Mater进程作用：读取并验证配置文件nginx.conf，管理worker进程</li>
+<li>Worker进程作用：每一个Worker进程都维护一个线程（避免线程切换），处理连接和请求；注意Worker进程的个数由配置文件决定，一般和CPU个数有关（有利于进程切换）</li>
+<li>热部署：配置文件nginx.conf修改以后不需要stop nginx中断请求，就能让配置文件生效<br>结合worker进程负责处理具体的请求：<ul>
+<li>方案一：修改nginx.conf后，主进程master负责推送给worker进程更新配置信息，worker进程收到信息后更新进程内部的线程信息</li>
+<li>方案二：修改nginx.conf后，重新生成新的worker进程，以新的配置进行处理请求，老的woker进程等它们的请求处理完毕后kill掉即可<br>nginx采用方案二实现热部署</li>
+</ul>
+</li>
+<li>如何做到高并发下的高效处理：上文已经提及nginx的worker进程个数与CPU绑定、worker进程内部包含一个线程高效回环处理请求，的确有助于效率但是不够。同时处理那么多请求的问题在于，有的请求需要发生IO，可能需要很长时间，如果等着它们，就会拖慢worker的处理速度<ul>
+<li>nginx采用了Linux的epoll模型，这个模型基于事件驱动机制，它可以监控多个事件是否准备完毕，如果OK，那么放入epoll队列中，这个过程是异步的。所以worker只需要从epoll队列循环处理即可</li>
+</ul>
+</li>
+<li>nginx挂了怎么办：nginx作为入口网关，如果出现单点问题显然是不可接受的<ul>
+<li>解决方案：Keepalived + Nginx</li>
+<li>keepalived 是一个高可用解决方案，主要用来防止服务器单点发生故障，可以通过和nginx配合来实现Web服务的高可用</li>
+<li>思路：<ul>
+<li>请求不要直接打到nginx上，应该先通过Keepalived (虚拟IP)</li>
+<li>Keepalived 应该能监控nginx的生命状态（提供一个用户自定义的脚本，定期检查nginx进程状态，进行权重变化，从而实现nginx故障切换）<br><img src="https://ws1.sinaimg.cn/large/e4336439gy1frsgov5bh3j20jg07tdgl.jpg" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>###主战场：nginx.conf<br>nginx.conf是典型的分段配置文件</p>
+<ul>
+<li>虚拟主机<ul>
+<li><img src="https://ws1.sinaimg.cn/large/e4336439gy1frsgrqy6tsj20ia080t8w.jpg" alt=""></li>
+<li>把nginx作为web server来处理静态资源<ul>
+<li>location可以进行正则匹配，注意正则的几种形式以及优先级</li>
+<li>nginx能提高速度的其中一个特性：动静分离，把静态资源放到nginx上，由nginx管理，动态请求转发给后端</li>
+<li>在nginx下将静态资源、日志文件归属到不同域名（目录）下，方便管理维护</li>
+<li>nginx可以进行ip访问控制，如有些电商平台，在nginx这一层就做了处理，内置一个黑名单模块</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>反向代理<ul>
+<li>在location这一段配置中的root替换成proxy_pass即可<ul>
+<li>root说明是静态资源，可以由nginx进行返回；而proxy_pass说明是动态请求，需要进行转发，如代理到Tomcat上</li>
+<li>反向代理过程是透明的，比如在request-&gt;nginx-&gt;Tomcat这里对于Tomcat而言请求的ip就是nginx的地址而不是真实的request地址。好在nginx不仅仅可以反向代理请求，也可以由用户自定义设置HTTP HEADER</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>负载均衡<ul>
+<li>在反向代理中，通过proxy_pass来指定Tomcat的地址，这里只能指定一台Tomcat，如果想指定多台来达到负载均衡呢？<ul>
+<li>通过 upstream 来定义一组Tomcat，并指定负载策略（IPHASH、加权论调、最少连接），健康检查策略（nginx监控这一组Tomcat的状态）等</li>
+<li>将proxy_pass换成upstream指定的值即可</li>
+</ul>
+</li>
+<li>带来的问题：用户状态的保存问题，如session信息不能保存到服务器上</li>
+</ul>
+</li>
+</ul>
+<p>###缓存<br>在配置上开启，同时指定目录，让缓存可以存储到磁盘上</p>
+<p>参考：<br><a href="http://blog.51cto.com/zhangfengzhe/2064524" target="_blank" rel="noopener">http://blog.51cto.com/zhangfengzhe/2064524</a></p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/23/ES6基础概念/" itemprop="url">
-              
-                <span itemprop="name">ES6基础概念</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-23T19:14:24+08:00"
-              content="2017-11-23" >
-          11-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/23/jQuery基础/" itemprop="url">
-              
-                <span itemprop="name">jQuery基础</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-23T19:13:18+08:00"
-              content="2017-11-23" >
-          11-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/23/面向对象与原型/" itemprop="url">
-              
-                <span itemprop="name">面向对象与原型</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-23T18:22:47+08:00"
-              content="2017-11-23" >
-          11-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/23/Hexo-blog/" itemprop="url">
-              
-                <span itemprop="name">Hexo + Github Pages搭建你的博客</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-23T17:24:47+08:00"
-              content="2017-11-23" >
-          11-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/19/welcome/" itemprop="url">
-              
-                <span itemprop="name">Welcome</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-19T15:20:59+08:00"
-              content="2017-11-19" >
-          11-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/27/Flex-Grid布局/" rel="next" title="Flex-Grid布局">
+                <i class="fa fa-chevron-left"></i> Flex-Grid布局
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -597,6 +526,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="hypercomments_widget"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -852,6 +790,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
@@ -875,6 +817,8 @@
 
 		_hcwp.push({widget:"Bloggerstream", widget_id: 98151, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
+		
+		_hcwp.push({widget:"Stream", widget_id: 98151, xid: "2018/05/29/深入浅出Nginx/"});
 		
 
 		(function() {
