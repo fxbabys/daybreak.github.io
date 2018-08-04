@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-02T12:11:47.587Z</updated>
+  <updated>2018-08-04T16:46:06.869Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>移动端页面开发总结</title>
+    <link href="http://yoursite.com/2018/08/04/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2018/08/04/移动端页面开发总结/</id>
+    <published>2018-08-04T15:35:28.000Z</published>
+    <updated>2018-08-04T16:46:06.869Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>工作室暑期集训在带17级成员做官网，这里主要总结一些移动端页面开发的基本知识~</p></blockquote><h3 id="像素"><a href="#像素" class="headerlink" title="像素"></a>像素</h3><ul><li>概念：一个像素就是计算机屏幕所能显示一种特定颜色的最小区域</li><li>web前端开发中：<ul><li>设备像素：设备屏幕的物理像素，对任何设备来说物理像素的数量是固定的</li><li>CSS像素：抽象的像素概念，专为web开发者创造<ul><li>比如：给一个元素设置 <code>width: 200px</code> 即这个元素的宽度跨越了200个CSS像素</li><li>跨越的设备像素：取决于<strong>手机屏幕</strong>和<strong>用户的缩放</strong><ul><li>iPhone的像素密度是普通屏幕的2倍此时<code>200px</code> 跨越了400个设备像素</li><li>用户缩小页面到一定程度时，一个CSS像素会明显小于一个设备像素，用户缩放页面就是在缩放CSS像素，设备像素大小数量都是固定的</li></ul></li></ul></li></ul></li></ul><h3 id="移动端的视口"><a href="#移动端的视口" class="headerlink" title="移动端的视口"></a>移动端的视口</h3><ul><li><p>视口是html的父元素，也称为初始包含块，即<strong>html元素的百分比是基于视口的</strong></p></li><li><p>布局视口：移动端CSS布局的依据视口</p><ul><li><p>PC浏览器中，视口的宽度 = 浏览器窗口的宽度</p></li><li><p>移动端中CSS布局会依据布局视口来计算</p><p><img src="http://ww1.sinaimg.cn/large/e4336439gy1fty3uhhse3j208c0anq4l.jpg" alt=""></p></li><li><p>获取布局视口的宽高：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.documentElement.clientWidth</span><br><span class="line"><span class="built_in">document</span>.documentElement.clientHeight</span><br></pre></td></tr></table></figure></li></ul></li><li><p>视觉视口：用户所看见的网站区域</p></li><li><p>理想视口：理想的布局视口：</p><ul><li><p>将布局视口设为理想视口</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name="viewport" content="width=device-width" /&gt;</span><br></pre></td></tr></table></figure><p>width指布局视口的宽度、device-width指理想视口的宽度</p></li></ul></li></ul><h3 id="设备像素比"><a href="#设备像素比" class="headerlink" title="设备像素比"></a>设备像素比</h3><ul><li><p>Device Pixel Ratio（DPR），计算公式：</p><ul><li>前提（缩放比例为1）：DPR = 设备像素个数 / 理想视口CSS像素个数（device-width）</li><li>浏览器手机预览模式显示的是<strong>理想视口宽高</strong></li></ul></li><li><p>缩放页面：缩小放大的是CSS像素</p></li><li><p>meta 标签：</p><ul><li><p>让布局视口和理想视口的宽度匹配，常用属性：</p><blockquote><ol><li>width: 设置布局视口的宽</li><li>init-scale：设置页面的初始缩放程度</li><li>minimum-scale：设置页面的最小缩放程度</li><li>maximum-scale：设置页面的最大缩放程度</li><li>user-scalable：是否允许用户对页面进行缩放</li></ol></blockquote></li><li><p>常用实例：</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"</span><br></pre></td></tr></table></figure></li></ul></li><li><p>媒体查询：</p><ul><li><p>响应式设计的基础：</p><ul><li>检测媒体类型，如 screen、tv等</li><li>检测布局视口的特性，如视口的宽高分辨率等</li><li>特性相关查询，如检测浏览器是否支持某某特性</li></ul></li><li><p>语法：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">media</span> 媒体类型 and (视口特性阈值) &#123;</span><br><span class="line">    // css code</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul></li></ul><h3 id="从设计图到页面开发"><a href="#从设计图到页面开发" class="headerlink" title="从设计图到页面开发"></a>从设计图到页面开发</h3><ul><li><p>起因：设计图依据设备像素进行设计，而CSS布局依据布局视口的尺寸进行计算</p></li><li><p>解决方案一：</p><ul><li><p>将布局视口的尺寸设置为和设备像素尺寸相等，在设置meta标签后即需要设置理想视口尺寸</p><ul><li><p>CSS缩放值 = 设备像素比的倒数：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> scale = <span class="number">1</span> / <span class="built_in">window</span>.devicePixelRatio</span><br><span class="line"><span class="built_in">document</span>.querySelector(<span class="string">'meta[name="viewport"]'</span>).setAttribute(<span class="string">'content'</span>, <span class="string">'width=device-width, initial-scale='</span> + scale + <span class="string">', maximum-scale='</span> + scale + <span class="string">', minimum-scale='</span> + scale + <span class="string">', user-scalable=no'</span></span><br></pre></td></tr></table></figure><p>无论任何设备，布局视口的宽度总是等于设备像素</p></li></ul></li><li><p>元素跟着设备变化而等比缩放</p><ul><li><p>rem：<strong>相对于html标签字体大小的单位</strong></p></li><li><p>动态设置html字体大小：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.documentElement.style.fontSize = <span class="built_in">document</span>.documentElemet.clientWidth / <span class="number">10</span> + <span class="string">'px'</span></span><br></pre></td></tr></table></figure></li><li><p>注意：<strong>文字字体大小还是用px</strong></p></li></ul></li><li><p>思路：通过js动态修改meta标签使布局视口尺寸等于设计图尺寸（设备像素尺寸），再用rem代替px使得页面在不同设备中等比缩放</p></li></ul></li><li><p>解决方案二：</p><ul><li><p>不修改meta标签，正常使用缩放为1:1的meta标签</p></li><li><p>将页面的总宽度设置为以rem为单位的定值，如750px总宽取100px的font-size即7.5rem</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.documentElement.style.fontSize = <span class="built_in">document</span>.documentElement.clientWidth / <span class="number">7.5</span> + <span class="string">'px'</span></span><br></pre></td></tr></table></figure></li><li><p>开发页面时通过设计图尺寸/100得到rem尺寸</p></li></ul></li><li><p>文字字体大小设置：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">media</span> screen and (max-width: <span class="number">321px</span>) &#123;</span><br><span class="line">    <span class="selector-tag">body</span> &#123;</span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">16px</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">media</span> screen and (min-width: <span class="number">321px</span>) and (max-width: <span class="number">400px</span>) &#123;</span><br><span class="line">    <span class="selector-tag">body</span> &#123;</span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">17px</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">media</span> screen and (min-width: <span class="number">400px</span>) &#123;</span><br><span class="line">    <span class="selector-tag">body</span> &#123;</span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">19px</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>新的思路</p><ul><li><p>沿用rem布局方案，所有布局元素与属性采用rem做单位</p></li><li><p><strong>html设置font-size使用vw视口单位</strong></p><p>​</p></li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;工作室暑期集训在带17级成员做官网，这里主要总结一些移动端页面开发的基本知识~&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;像素&quot;&gt;&lt;a href=&quot;#像素&quot; class=&quot;headerlink&quot; title=&quot;像素&quot;&gt;&lt;/a&gt;像素&lt;/h3
+      
+    
+    </summary>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>Vuex核心</title>
@@ -472,30 +498,6 @@
     
     
       <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo + Github Pages搭建你的博客</title>
-    <link href="http://yoursite.com/2017/11/23/Hexo-blog/"/>
-    <id>http://yoursite.com/2017/11/23/Hexo-blog/</id>
-    <published>2017-11-23T09:24:47.000Z</published>
-    <updated>2017-11-23T15:07:19.002Z</updated>
-    
-    <content type="html"><![CDATA[<p>一开始自己用hexo搭博客的时候踩了比较多坑，在这里想总结一下做一个简单的搭建教程，后续使用再慢慢完善</p><h1 id="初始配置环境"><a href="#初始配置环境" class="headerlink" title="初始配置环境"></a>初始配置环境</h1><ul><li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">node</a> 作用：生成静态页面</li><li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> 作用：将本地的hexo内容提交到github上</li><li><a href="https://github.com/" target="_blank" rel="noopener">申请Github</a> 作用：作为博客的远程仓库和服务器</li></ul><h1 id="Hexo的安装及初始化"><a href="#Hexo的安装及初始化" class="headerlink" title="Hexo的安装及初始化"></a>Hexo的安装及初始化</h1><p>环境配置好后，创建一个文件夹，进入后执行以下命令：</p><ul><li><code>npm install hexo-cli -g</code> 安装hexo</li><li><code>hexo init</code> 初始化</li><li><code>npm install</code></li><li><code>hexo generate</code> 生成静态页面</li><li><code>hexo server</code> 启动本地服务<br>之后浏览器输入<a href="http://localhost:4000" target="_blank" rel="noopener">localhost:4000</a> 就可以看到一个默认的hexo博客啦</li></ul><h1 id="Github上的配置"><a href="#Github上的配置" class="headerlink" title="Github上的配置"></a>Github上的配置</h1><p>进入Github新建一个仓库，这里特别要强调的是仓库名的格式必须为yourusername.github.io，yourusername就是你的Github用户名，这里错误的话，之后直接访问就会404（我就是这样o(╥﹏╥)o）,建好以后就clone一下HTTPS形式的url（这里先不用SSH）</p><h1 id="本地Hexo文件的修改"><a href="#本地Hexo文件的修改" class="headerlink" title="本地Hexo文件的修改"></a>本地Hexo文件的修改</h1><p>进入Hexo文件根目录下的_config.yml，打开以后拉到最下面的deploy那里，改成如下形式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/fxbabys/fxbabys.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p><p>这里也特别要强调的是冒号后面一定要加空格</p><p>然后执行命令安装: <code>npm install hexo-deployer-git --save</code><br>再执行配置命令: <code>hexo deploy</code><br>这样本地文件就上传到Github远程库上了，访问<a href="https://fxbabys.github.io/" target="_blank" rel="noopener">https://fxbabys.github.io/</a>就行了</p><p>之后每次部署发布文章可以按下面的步骤进行：</p><ul><li><code>hexo new &quot;文章名称&quot;</code> 这样会在source/_posts下生成一个md文档</li><li><code>hexo server(hexo s)</code> 上传前本地先预览一下效果</li><li><code>hexo generate(hexo g)</code></li><li><code>hexo deploy(hexo d)</code></li></ul><p>到这里搭建一个hexo博客和发布新文章就完成啦！<br>更个性化的设置可以自己去<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>官方文档上查看，介绍的都很详细，也可以去网上找教程再多折腾一些自己的喜好（(<em>^▽^</em>)）</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;一开始自己用hexo搭博客的时候踩了比较多坑，在这里想总结一下做一个简单的搭建教程，后续使用再慢慢完善&lt;/p&gt;
-&lt;h1 id=&quot;初始配置环境&quot;&gt;&lt;a href=&quot;#初始配置环境&quot; class=&quot;headerlink&quot; title=&quot;初始配置环境&quot;&gt;&lt;/a&gt;初始配置环境&lt;/h
-      
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
