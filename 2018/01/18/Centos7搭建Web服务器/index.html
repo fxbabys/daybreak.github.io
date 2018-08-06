@@ -7,7 +7,10 @@
     error: 'Copy error',
     noSupport: 'The browser does not support'
   }
-} </script></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#centos7安装"><span class="toc-number">1.</span> <span class="toc-text">centos7安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Apache、Mysql、PHP安装"><span class="toc-number">2.</span> <span class="toc-text">Apache、Mysql、PHP安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置apache虚拟目录"><span class="toc-number">3.</span> <span class="toc-text">配置apache虚拟目录</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="http://ww1.sinaimg.cn/large/e4336439gy1ftum80p9mtj20rs0rs0we.jpg"></div><div class="author-info__name text-center">Day Break</div><div class="author-info__description text-center">仰望星空，脚踏实地，因为相信，所以看见</div><div class="follow-button"><a href="https://github.com/fxbabys" target="_blank">Follow Me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">22</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">12</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(http://ww1.sinaimg.cn/large/e4336439gy1ftulr1hkycj21xg12w1ky.jpg);"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Jeremy's blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> Search</span></a><a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a></span></div><div id="post-info"><div id="post-title">Centos7搭建Web服务器</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-26</time><span class="post-meta__separator">|</span><i class="fa fa-comment-o post-meta__icon" aria-hidden="true"></i><a href="/2018/01/18/Centos7搭建Web服务器/#disqus_thread"><span class="disqus-comment-count" data-disqus-identifier="2018/01/18/Centos7搭建Web服务器/"></span></a><div class="post-meta-wordcount"><span>Word count: </span><span class="word-count">841</span><span class="post-meta__separator">|</span><span>Reading time: 3 min</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p>最近在虚拟机里装了centos7来配置lamp服务器，其中踩了好多好多……坑o(╥﹏╥)o，必须做个记录</p>
+} </script></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#centos7安装"><span class="toc-number">1.</span> <span class="toc-text">centos7安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Apache、Mysql、PHP安装"><span class="toc-number">2.</span> <span class="toc-text">Apache、Mysql、PHP安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置apache虚拟目录"><span class="toc-number">3.</span> <span class="toc-text">配置apache虚拟目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#扩展：nginx-与-node-的安装"><span class="toc-number">4.</span> <span class="toc-text">扩展：nginx 与 node 的安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#nginx-安装"><span class="toc-number">4.1.</span> <span class="toc-text">nginx 安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#node-安装"><span class="toc-number">4.2.</span> <span class="toc-text">node 安装</span></a></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="http://ww1.sinaimg.cn/large/e4336439gy1ftum80p9mtj20rs0rs0we.jpg"></div><div class="author-info__name text-center">Day Break</div><div class="author-info__description text-center">仰望星空，脚踏实地，因为相信，所以看见</div><div class="follow-button"><a href="https://github.com/fxbabys" target="_blank">Follow Me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">22</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">12</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(http://ww1.sinaimg.cn/large/e4336439gy1ftulr1hkycj21xg12w1ky.jpg);"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Jeremy's blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> Search</span></a><a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a></span></div><div id="post-info"><div id="post-title">Centos7搭建Web服务器</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-08-06</time><span class="post-meta__separator">|</span><i class="fa fa-comment-o post-meta__icon" aria-hidden="true"></i><a href="/2018/01/18/Centos7搭建Web服务器/#disqus_thread"><span class="disqus-comment-count" data-disqus-identifier="2018/01/18/Centos7搭建Web服务器/"></span></a><div class="post-meta-wordcount"><span>Word count: </span><span class="word-count">1,211</span><span class="post-meta__separator">|</span><span>Reading time: 5 min</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><blockquote>
+<p>最近在虚拟机里装了centos7来配置lamp服务器，其中踩了好多好多……坑o(╥﹏╥)o，必须做个记录</p>
+<p>更新：nginx 与 node 的安装</p>
+</blockquote>
 <h3 id="centos7安装"><a href="#centos7安装" class="headerlink" title="centos7安装"></a>centos7安装</h3><ul>
 <li>这里就是网上下好iso镜像，然后一步步装好，建议初学者选GNONE桌面版方便操作</li>
 </ul>
@@ -36,6 +39,55 @@
 </li>
 </ol>
 <p>这样访问成功后就可以通过自定义的目录访问web文档</p>
+<h3 id="扩展：nginx-与-node-的安装"><a href="#扩展：nginx-与-node-的安装" class="headerlink" title="扩展：nginx 与 node 的安装"></a>扩展：nginx 与 node 的安装</h3><h4 id="nginx-安装"><a href="#nginx-安装" class="headerlink" title="nginx 安装"></a>nginx 安装</h4><ul>
+<li><p>添加 centos7 nginx yum 资源库：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>yum 安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y nginx</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动并且开机启动nginx：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start nginx &amp;&amp; sudo systemctl enable nginx</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>测试nginx配置文件（查看nginx配置位置）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -t</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="node-安装"><a href="#node-安装" class="headerlink" title="node 安装"></a>node 安装</h4><ul>
+<li><p>使用官方编译的二进制数据包安装：</p>
+<ul>
+<li><p>进入官网<a href="https://nodejs.org/download/release/" target="_blank" rel="noopener">下载链接</a>，选择想要下载的版本链接与版本(*-linux-x64.tar.gz)，进入用户主目录使用 <code>wget</code> 命令下载：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://nodejs.org/download/release/v8.9.4/node-v8.9.4-linux-x64.tar.gz</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>下载完成后解压到 <code>/usr/local</code> 目录并安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tar --strip-components 1 -xzvf node-v* -C /usr/local</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装完成后验证安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">v8.9.4</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>源码安装：</p>
+<ul>
+<li><p>使用源码安装与二进制数据包安装的区别在于源码安装还需要编译源码才能安装</p>
+</li>
+<li><p>进入官网<a href="https://nodejs.org/download/release/" target="_blank" rel="noopener">下载链接</a>，选择版本(node-v*.tar.gz)：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://nodejs.org/download/release/v8.9.4/node-v8.9.4.tar.gz</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>下载完成后，解压并进入解压后的目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xzvf node-v8.9.4.tar.gz &amp;&amp; cd node-v8.9.4</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编译源码需要安装 <code>gcc</code> 和 <code>gcc-c++</code> (可先使用<code>yum info package_name</code> 检查是否已安装)：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install gcc gcc-c++</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装完成后运行 <code>configure</code> 文件并编译，编译完成后安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./configure &amp;&amp; make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>​</p>
+</li>
+</ul>
+</li>
+</ul>
 </div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Day Break</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://yoursite.com/2018/01/18/Centos7搭建Web服务器/">http://yoursite.com/2018/01/18/Centos7搭建Web服务器/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Linux/">Linux</a></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2018/01/22/HTTP协议/"><i class="fa fa-chevron-left">  </i><span>HTTP协议</span></a></div><div class="next-post pull-right"><a href="/2017/12/29/异步JavaScript请求/"><span>异步JavaScript请求</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="disqus_thread"></div><script>var unused = null;
 var disqus_config = function () {
   this.page.url = 'http://yoursite.com/2018/01/18/Centos7搭建Web服务器/';
