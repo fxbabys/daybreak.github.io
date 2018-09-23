@@ -5,9 +5,9 @@
   <subtitle>Share the technology and life</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2018-08-04T16:46:06.869Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://jeremygo.cn/"/>
+  <updated>2018-09-23T00:50:29.810Z</updated>
+  <id>https://jeremygo.cn/</id>
   
   <author>
     <name>Day Break</name>
@@ -17,9 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>每周精进(9.23)</title>
+    <link href="https://jeremygo.cn/2018/09/23/%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-9-23/"/>
+    <id>https://jeremygo.cn/2018/09/23/每周精进-9-23/</id>
+    <published>2018-09-23T00:31:04.000Z</published>
+    <updated>2018-09-23T00:50:29.810Z</updated>
+    
+    <content type="html"><![CDATA[<p>从暑假结束到现在近一个月, 大部分的时间都在忙课程和组织迎新, 整体的学习感觉并不好, 博客和github都一直在闲置,  趁着放假的机会好好整理一下思绪, 还是希望能利用好最后一个学期上课的时间多做明年春招的准备,争取进入大厂去见识更广阔的世界~</p><p>因此决定坚持开始一个每周有所精进的阶段, 每周日定好下一周的小目标, 下一周最先开始说明目标完成情况,以此督促自己~</p><p>9.30日前完成: </p><ul><li>学习实现Promise发布到轮子项目上, 尽量能作博客说明</li><li>基于umi重构react-hackernews</li><li>精听六级听力一篇. 完成六级作文一篇</li></ul><p>近期书单:  Node.js: 来一打C++扩展</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;从暑假结束到现在近一个月, 大部分的时间都在忙课程和组织迎新, 整体的学习感觉并不好, 博客和github都一直在闲置,  趁着放假的机会好好整理一下思绪, 还是希望能利用好最后一个学期上课的时间多做明年春招的准备,争取进入大厂去见识更广阔的世界~&lt;/p&gt;
+&lt;p&gt;因此决定坚
+      
+    
+    </summary>
+    
+    
+      <category term="周计划" scheme="https://jeremygo.cn/tags/%E5%91%A8%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
     <title>移动端页面开发总结</title>
-    <link href="http://yoursite.com/2018/08/04/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2018/08/04/移动端页面开发总结/</id>
+    <link href="https://jeremygo.cn/2018/08/04/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%8F%91%E6%80%BB%E7%BB%93/"/>
+    <id>https://jeremygo.cn/2018/08/04/移动端页面开发总结/</id>
     <published>2018-08-04T15:35:28.000Z</published>
     <updated>2018-08-04T16:46:06.869Z</updated>
     
@@ -38,14 +62,14 @@
     </summary>
     
     
-      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+      <category term="CSS" scheme="https://jeremygo.cn/tags/CSS/"/>
     
   </entry>
   
   <entry>
     <title>Vuex核心</title>
-    <link href="http://yoursite.com/2018/07/13/Vuex%E6%A0%B8%E5%BF%83/"/>
-    <id>http://yoursite.com/2018/07/13/Vuex核心/</id>
+    <link href="https://jeremygo.cn/2018/07/13/Vuex%E6%A0%B8%E5%BF%83/"/>
+    <id>https://jeremygo.cn/2018/07/13/Vuex核心/</id>
     <published>2018-07-13T12:54:54.000Z</published>
     <updated>2018-08-02T12:11:47.587Z</updated>
     
@@ -61,14 +85,14 @@
     </summary>
     
     
-      <category term="Vue" scheme="http://yoursite.com/tags/Vue/"/>
+      <category term="Vue" scheme="https://jeremygo.cn/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>计算机网络复习</title>
-    <link href="http://yoursite.com/2018/06/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%A4%8D%E4%B9%A0/"/>
-    <id>http://yoursite.com/2018/06/29/计算机网络复习/</id>
+    <link href="https://jeremygo.cn/2018/06/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%A4%8D%E4%B9%A0/"/>
+    <id>https://jeremygo.cn/2018/06/29/计算机网络复习/</id>
     <published>2018-06-29T12:23:06.000Z</published>
     <updated>2018-06-30T03:40:30.562Z</updated>
     
@@ -87,14 +111,14 @@
     </summary>
     
     
-      <category term="Courses" scheme="http://yoursite.com/tags/Courses/"/>
+      <category term="Courses" scheme="https://jeremygo.cn/tags/Courses/"/>
     
   </entry>
   
   <entry>
     <title>操作系统复习</title>
-    <link href="http://yoursite.com/2018/06/24/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/"/>
-    <id>http://yoursite.com/2018/06/24/操作系统复习/</id>
+    <link href="https://jeremygo.cn/2018/06/24/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/"/>
+    <id>https://jeremygo.cn/2018/06/24/操作系统复习/</id>
     <published>2018-06-24T01:10:05.000Z</published>
     <updated>2018-06-27T13:32:59.195Z</updated>
     
@@ -113,14 +137,14 @@
     </summary>
     
     
-      <category term="Courses" scheme="http://yoursite.com/tags/Courses/"/>
+      <category term="Courses" scheme="https://jeremygo.cn/tags/Courses/"/>
     
   </entry>
   
   <entry>
     <title>深入浅出Nginx</title>
-    <link href="http://yoursite.com/2018/05/29/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANginx/"/>
-    <id>http://yoursite.com/2018/05/29/深入浅出Nginx/</id>
+    <link href="https://jeremygo.cn/2018/05/29/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANginx/"/>
+    <id>https://jeremygo.cn/2018/05/29/深入浅出Nginx/</id>
     <published>2018-05-29T11:31:26.000Z</published>
     <updated>2018-05-29T15:46:46.384Z</updated>
     
@@ -141,8 +165,8 @@
   
   <entry>
     <title>Flex-Grid布局</title>
-    <link href="http://yoursite.com/2018/03/27/Flex-Grid%E5%B8%83%E5%B1%80/"/>
-    <id>http://yoursite.com/2018/03/27/Flex-Grid布局/</id>
+    <link href="https://jeremygo.cn/2018/03/27/Flex-Grid%E5%B8%83%E5%B1%80/"/>
+    <id>https://jeremygo.cn/2018/03/27/Flex-Grid布局/</id>
     <published>2018-03-27T10:07:42.000Z</published>
     <updated>2018-03-27T12:09:42.420Z</updated>
     
@@ -163,8 +187,8 @@
   
   <entry>
     <title>HTML5&amp;CSS3关键点</title>
-    <link href="http://yoursite.com/2018/03/13/HTML5-CSS3%E5%85%B3%E9%94%AE%E7%82%B9/"/>
-    <id>http://yoursite.com/2018/03/13/HTML5-CSS3关键点/</id>
+    <link href="https://jeremygo.cn/2018/03/13/HTML5-CSS3%E5%85%B3%E9%94%AE%E7%82%B9/"/>
+    <id>https://jeremygo.cn/2018/03/13/HTML5-CSS3关键点/</id>
     <published>2018-03-13T12:40:27.000Z</published>
     <updated>2018-03-27T10:01:41.281Z</updated>
     
@@ -188,8 +212,8 @@
   
   <entry>
     <title>Js基础笔记</title>
-    <link href="http://yoursite.com/2018/03/04/Js%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2018/03/04/Js基础笔记/</id>
+    <link href="https://jeremygo.cn/2018/03/04/Js%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/"/>
+    <id>https://jeremygo.cn/2018/03/04/Js基础笔记/</id>
     <published>2018-03-04T13:42:07.000Z</published>
     <updated>2018-03-04T14:16:02.474Z</updated>
     
@@ -206,14 +230,14 @@
     </summary>
     
     
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+      <category term="javascript" scheme="https://jeremygo.cn/tags/javascript/"/>
     
   </entry>
   
   <entry>
     <title>ThinkPHP5博客搭建知识汇总</title>
-    <link href="http://yoursite.com/2018/02/26/ThinkPHP5%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/"/>
-    <id>http://yoursite.com/2018/02/26/ThinkPHP5博客搭建知识汇总/</id>
+    <link href="https://jeremygo.cn/2018/02/26/ThinkPHP5%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/"/>
+    <id>https://jeremygo.cn/2018/02/26/ThinkPHP5博客搭建知识汇总/</id>
     <published>2018-02-26T08:11:40.000Z</published>
     <updated>2018-02-26T09:11:25.566Z</updated>
     
@@ -233,14 +257,14 @@
     </summary>
     
     
-      <category term="ThinkPHP" scheme="http://yoursite.com/tags/ThinkPHP/"/>
+      <category term="ThinkPHP" scheme="https://jeremygo.cn/tags/ThinkPHP/"/>
     
   </entry>
   
   <entry>
     <title>WebSocket实践</title>
-    <link href="http://yoursite.com/2018/02/02/WebSocket%E5%AE%9E%E8%B7%B5/"/>
-    <id>http://yoursite.com/2018/02/02/WebSocket实践/</id>
+    <link href="https://jeremygo.cn/2018/02/02/WebSocket%E5%AE%9E%E8%B7%B5/"/>
+    <id>https://jeremygo.cn/2018/02/02/WebSocket实践/</id>
     <published>2018-02-02T11:04:49.000Z</published>
     <updated>2018-02-02T12:06:11.251Z</updated>
     
@@ -257,14 +281,14 @@
     </summary>
     
     
-      <category term="WebSocket" scheme="http://yoursite.com/tags/WebSocket/"/>
+      <category term="WebSocket" scheme="https://jeremygo.cn/tags/WebSocket/"/>
     
   </entry>
   
   <entry>
     <title>HTTP协议</title>
-    <link href="http://yoursite.com/2018/01/22/HTTP%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://yoursite.com/2018/01/22/HTTP协议/</id>
+    <link href="https://jeremygo.cn/2018/01/22/HTTP%E5%8D%8F%E8%AE%AE/"/>
+    <id>https://jeremygo.cn/2018/01/22/HTTP协议/</id>
     <published>2018-01-22T02:35:17.000Z</published>
     <updated>2018-01-22T08:20:35.956Z</updated>
     
@@ -282,14 +306,14 @@
     </summary>
     
     
-      <category term="HTTP" scheme="http://yoursite.com/tags/HTTP/"/>
+      <category term="HTTP" scheme="https://jeremygo.cn/tags/HTTP/"/>
     
   </entry>
   
   <entry>
     <title>Centos7搭建Web服务器</title>
-    <link href="http://yoursite.com/2018/01/18/Centos7%E6%90%AD%E5%BB%BAWeb%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    <id>http://yoursite.com/2018/01/18/Centos7搭建Web服务器/</id>
+    <link href="https://jeremygo.cn/2018/01/18/Centos7%E6%90%AD%E5%BB%BAWeb%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>https://jeremygo.cn/2018/01/18/Centos7搭建Web服务器/</id>
     <published>2018-01-18T08:56:20.000Z</published>
     <updated>2018-08-06T08:09:01.670Z</updated>
     
@@ -309,14 +333,14 @@
     </summary>
     
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://jeremygo.cn/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>异步JavaScript请求</title>
-    <link href="http://yoursite.com/2017/12/29/%E5%BC%82%E6%AD%A5JavaScript%E8%AF%B7%E6%B1%82/"/>
-    <id>http://yoursite.com/2017/12/29/异步JavaScript请求/</id>
+    <link href="https://jeremygo.cn/2017/12/29/%E5%BC%82%E6%AD%A5JavaScript%E8%AF%B7%E6%B1%82/"/>
+    <id>https://jeremygo.cn/2017/12/29/异步JavaScript请求/</id>
     <published>2017-12-29T01:56:44.000Z</published>
     <updated>2017-12-29T11:23:21.159Z</updated>
     
@@ -337,8 +361,8 @@
   
   <entry>
     <title>Web性能优化</title>
-    <link href="http://yoursite.com/2017/12/02/Web%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
-    <id>http://yoursite.com/2017/12/02/Web性能优化/</id>
+    <link href="https://jeremygo.cn/2017/12/02/Web%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    <id>https://jeremygo.cn/2017/12/02/Web性能优化/</id>
     <published>2017-12-02T05:08:33.000Z</published>
     <updated>2017-12-02T05:22:27.090Z</updated>
     
@@ -357,14 +381,14 @@
     </summary>
     
     
-      <category term="Web" scheme="http://yoursite.com/tags/Web/"/>
+      <category term="Web" scheme="https://jeremygo.cn/tags/Web/"/>
     
   </entry>
   
   <entry>
     <title>Git常用操作</title>
-    <link href="http://yoursite.com/2017/11/30/Git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
-    <id>http://yoursite.com/2017/11/30/Git常用操作/</id>
+    <link href="https://jeremygo.cn/2017/11/30/Git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
+    <id>https://jeremygo.cn/2017/11/30/Git常用操作/</id>
     <published>2017-11-30T14:46:08.000Z</published>
     <updated>2017-12-30T09:57:57.438Z</updated>
     
@@ -381,14 +405,14 @@
     </summary>
     
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+      <category term="Git" scheme="https://jeremygo.cn/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>数据结构实验参考</title>
-    <link href="http://yoursite.com/2017/11/29/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AE%9E%E9%AA%8C%E5%8F%82%E8%80%83/"/>
-    <id>http://yoursite.com/2017/11/29/数据结构实验参考/</id>
+    <link href="https://jeremygo.cn/2017/11/29/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AE%9E%E9%AA%8C%E5%8F%82%E8%80%83/"/>
+    <id>https://jeremygo.cn/2017/11/29/数据结构实验参考/</id>
     <published>2017-11-29T01:44:22.000Z</published>
     <updated>2017-12-24T08:36:19.178Z</updated>
     
@@ -405,14 +429,14 @@
     </summary>
     
     
-      <category term="数据结构" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="https://jeremygo.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
   <entry>
     <title>函数防抖与函数节流</title>
-    <link href="http://yoursite.com/2017/11/23/%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96%E4%B8%8E%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81/"/>
-    <id>http://yoursite.com/2017/11/23/函数防抖与函数节流/</id>
+    <link href="https://jeremygo.cn/2017/11/23/%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96%E4%B8%8E%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81/"/>
+    <id>https://jeremygo.cn/2017/11/23/函数防抖与函数节流/</id>
     <published>2017-11-23T11:15:07.000Z</published>
     <updated>2017-11-23T11:20:18.193Z</updated>
     
@@ -430,14 +454,14 @@
     </summary>
     
     
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+      <category term="javascript" scheme="https://jeremygo.cn/tags/javascript/"/>
     
   </entry>
   
   <entry>
     <title>ES6基础概念</title>
-    <link href="http://yoursite.com/2017/11/23/ES6%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/"/>
-    <id>http://yoursite.com/2017/11/23/ES6基础概念/</id>
+    <link href="https://jeremygo.cn/2017/11/23/ES6%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/"/>
+    <id>https://jeremygo.cn/2017/11/23/ES6基础概念/</id>
     <published>2017-11-23T11:14:24.000Z</published>
     <updated>2017-12-02T05:12:57.778Z</updated>
     
@@ -453,14 +477,14 @@
     </summary>
     
     
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+      <category term="javascript" scheme="https://jeremygo.cn/tags/javascript/"/>
     
   </entry>
   
   <entry>
     <title>jQuery基础</title>
-    <link href="http://yoursite.com/2017/11/23/jQuery%E5%9F%BA%E7%A1%80/"/>
-    <id>http://yoursite.com/2017/11/23/jQuery基础/</id>
+    <link href="https://jeremygo.cn/2017/11/23/jQuery%E5%9F%BA%E7%A1%80/"/>
+    <id>https://jeremygo.cn/2017/11/23/jQuery基础/</id>
     <published>2017-11-23T11:13:18.000Z</published>
     <updated>2017-11-23T11:20:35.338Z</updated>
     
@@ -476,31 +500,7 @@
     </summary>
     
     
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>面向对象与原型</title>
-    <link href="http://yoursite.com/2017/11/23/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%8E%E5%8E%9F%E5%9E%8B/"/>
-    <id>http://yoursite.com/2017/11/23/面向对象与原型/</id>
-    <published>2017-11-23T10:22:47.000Z</published>
-    <updated>2017-11-23T11:20:25.528Z</updated>
-    
-    <content type="html"><![CDATA[<p>这里会先把之前已经写好的总结陆续放上来，主要也是有一个时间顺序记录自己的学习过程（(#^.^#)）</p><h1 id="面向对象与原型"><a href="#面向对象与原型" class="headerlink" title="面向对象与原型"></a>面向对象与原型</h1><h3 id="一-创建对象："><a href="#一-创建对象：" class="headerlink" title="一.创建对象："></a>一.创建对象：</h3><h4 id="1-最基本的创建一个对象并添加属性和方法"><a href="#1-最基本的创建一个对象并添加属性和方法" class="headerlink" title="1.最基本的创建一个对象并添加属性和方法"></a>1.最基本的创建一个对象并添加属性和方法</h4><p><img src="https://ooo.0o0.ooo/2017/07/02/5958f4ccc2af4.png" alt=""></p><p>缺点：每创建一个类似对象，都会产生大量代码</p><p>解决：工厂模式解决实例化对象产生大量重复代码，即设计一个实例化的函数</p><h4 id="2-工厂模式："><a href="#2-工厂模式：" class="headerlink" title="2.工厂模式："></a>2.工厂模式：</h4><p><img src="https://ooo.0o0.ooo/2017/07/02/5958f59831804.png" alt=""></p><p>新问题：无法区别实例的来源对象</p><p>解决：用构造函数来创建特定的对象</p><h4 id="3-构造函数"><a href="#3-构造函数" class="headerlink" title="3.构造函数"></a>3.构造函数</h4><p><img src="https://ooo.0o0.ooo/2017/07/02/5958f60585ac4.png" alt=""></p><p>重复实例化和对象识别的问题都得到解决</p><p>规范：<br>1.函数名和实例化名相同并且首字母大写（有助于区分构造函数和普通函数）</p><p>2.必须用new运算符创建对象（与普通函数的区别）</p><p>与工厂模式的区别：<br>1.构造函数没有显式地创建对象</p><p>2.直接把属性方法赋给this对象</p><p>3.没有return语句</p><p>小问题：在对run方法的引用上每次实例化的地址都不同，即alert(person1.run == person2.run)的结果是false</p><h3 id="二-原型"><a href="#二-原型" class="headerlink" title="二.原型"></a>二.原型</h3><p>创建的每个函数都有一个prototype属性（对象）。包含可以由特定类型的所有实例共享的属性和方法</p><p><img src="https://ooo.0o0.ooo/2017/07/02/5958f79adfc73.png" alt=""></p><h4 id="1-构造函数与原型模式的声明方式："><a href="#1-构造函数与原型模式的声明方式：" class="headerlink" title="1.构造函数与原型模式的声明方式："></a>1.构造函数与原型模式的声明方式：</h4><p><img src="https://ooo.0o0.ooo/2017/07/02/5958f7ee77a67.png" alt=""></p><p><img src="https://ooo.0o0.ooo/2017/07/02/5958f804640eb.png" alt=""></p><p>通过两种方式的对比可以明白为什么它们在对方法的引用地址上会有区别</p><h4 id="2-原型模式的执行流程："><a href="#2-原型模式的执行流程：" class="headerlink" title="2.原型模式的执行流程："></a>2.原型模式的执行流程：</h4><p>构造函数实例里有属性或方法的话就返回，没有就去它的原型对象中找</p><h4 id="对属性是在构造函数的实例里还是原型里的判断："><a href="#对属性是在构造函数的实例里还是原型里的判断：" class="headerlink" title="对属性是在构造函数的实例里还是原型里的判断："></a>对属性是在构造函数的实例里还是原型里的判断：</h4><pre><code>hasOwnProperty()---&gt;实例有返回truein操作符        ---&gt;只要存在就返回true                ---&gt;两种方法结合判断原型中是否存在属性</code></pre><h4 id="3-原型模式创建对象的缺点：共享"><a href="#3-原型模式创建对象的缺点：共享" class="headerlink" title="3.原型模式创建对象的缺点：共享"></a>3.原型模式创建对象的缺点：共享</h4><p>—–如果某次实例化时改变了原型中的属性，则会影响到之后的实例化对象</p><p>—–如果有传入参数的话，之后的实例化对象属性会覆盖掉之前的，无法独立</p><h4 id="即用相同原型创建的对象访问原型中的属性时，访问的都是同一个对象"><a href="#即用相同原型创建的对象访问原型中的属性时，访问的都是同一个对象" class="headerlink" title="即用相同原型创建的对象访问原型中的属性时，访问的都是同一个对象"></a>即用相同原型创建的对象访问原型中的属性时，访问的都是同一个对象</h4><p>解决：构造函数+原型模式的组合模式：</p><ul><li>构造函数适合封装属性</li><li>原型模式适合封装方法</li></ul><h4 id="组合模式："><a href="#组合模式：" class="headerlink" title="组合模式："></a>组合模式：</h4><p><img src="https://ooo.0o0.ooo/2017/07/02/5958fa40b9a60.png" alt=""></p><p>解决了传参和共享的难题，进一步的优化是把构造函数和原型封装到一起</p><h4 id="动态原型模式："><a href="#动态原型模式：" class="headerlink" title="动态原型模式："></a>动态原型模式：</h4><p><img src="https://ooo.0o0.ooo/2017/07/02/5958fa8190515.png" alt=""></p><p>以上两种是JS创建对象时使用较多的方式，优先考虑动态原型模式</p><h4 id="4-补充："><a href="#4-补充：" class="headerlink" title="4.补充："></a>4.补充：</h4><p>寄生构造函数：工厂模式+构造函数模式</p><p>—&gt;需要创建一个具有额外方法的引用类型</p><p><img src="https://ooo.0o0.ooo/2017/07/02/5958fb60c3f0b.png" alt=""></p><p>稳妥构造函数：</p><p>—&gt;构造函数中不用this,外部实例化函数时不用new</p><p><img src="https://ooo.0o0.ooo/2017/07/02/5958fb7573eb1.png" alt=""></p><h3 id="三-继承"><a href="#三-继承" class="headerlink" title="三.继承"></a>三.继承</h3><h4 id="1-原型链"><a href="#1-原型链" class="headerlink" title="1.原型链"></a>1.原型链</h4><p>正统面向对象语言实现继承的方式：接口实现和继承</p><p>ECMAScript只支持继承，实现的方式是依靠<strong>原型链</strong></p><p>实质：通过原型让一个引用类型继承另一个引用类型的属性和方法</p><p><img src="https://ooo.0o0.ooo/2017/07/03/59591a80318cb.png" alt=""></p><p><img src="https://ooo.0o0.ooo/2017/07/03/59591c573d9dc.png" alt=""></p><p>被继承的函数称为超类型（父类、基类）;继承的函数称为子类型（子类、派生类）</p><p><strong>继承存在的问题：</strong></p><ul><li>字面量重写原型会中断关系</li><li>子类型无法给超类型传递参数</li></ul><h4 id="2-借用构造函数（对象冒充）"><a href="#2-借用构造函数（对象冒充）" class="headerlink" title="2.借用构造函数（对象冒充）"></a>2.借用构造函数（对象冒充）</h4><p>—&gt;解决引用共享和不能给超类型传参的问题</p><p><img src="https://ooo.0o0.ooo/2017/07/03/595993685b8a7.png" alt=""></p><p>新问题：没有原型，无法复用</p><h4 id="3-组合继承（最常用）"><a href="#3-组合继承（最常用）" class="headerlink" title="3.组合继承（最常用）"></a>3.组合继承（最常用）</h4><p>—&gt;通过原型链继承原型的属性方法</p><p>—&gt;通过借用构造函数继承实例的属性</p><p>—&gt;既实现了函数复用，又保证每个实例的独立性</p><p><img src="https://ooo.0o0.ooo/2017/07/03/595990a376a5b.png" alt=""></p><h4 id="4-原型式继承"><a href="#4-原型式继承" class="headerlink" title="4.原型式继承"></a>4.原型式继承</h4><p>—&gt;借助原型并基于已有的对象创建新对象，不用再创建自定义类型</p><p><img src="https://ooo.0o0.ooo/2017/07/03/59599952b8aaf.png" alt=""></p><h4 id="5-寄生式继承（原型式-工厂模式）"><a href="#5-寄生式继承（原型式-工厂模式）" class="headerlink" title="5.寄生式继承（原型式+工厂模式）"></a>5.寄生式继承（原型式+工厂模式）</h4><p>—&gt;为了封装创建对象的过程</p><p><img src="https://ooo.0o0.ooo/2017/07/03/59599acd1fc6b.png" alt=""></p><h4 id="6-寄生组合式继承"><a href="#6-寄生组合式继承" class="headerlink" title="6.寄生组合式继承"></a>6.寄生组合式继承</h4><p>—&gt;处理组合式继承的问题：超类型在使用过程中被调用了两次：</p><ul><li>创建子类型时</li><li>在子类型构造函数内部</li></ul><p><img src="https://ooo.0o0.ooo/2017/07/03/59599c8f278a0.png" alt=""></p><p>通过原型链的混成形式调用方法，解决了两次调用的问题</p><h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><p>1.创建对象：</p><p>工厂模式：用简单的函数创建对象，添加属性方法然后返回它</p><p>构造函数模式：可以创建特定的对象，但是它的成员包括函数都不能复用</p><p>原型模式：利用函数的prototype属性来指定应该共享的方法和属性</p><p>组合模式：利用构造函数定义实例属性，利用原型定义共享方法</p><p>2.继承：</p><p>原型链继承：通过原型让一个引用类型继承另一个引用类型的属性和方法</p><p>借用构造函数（对象冒充）：解决引用共享和超类型不能传参的问题</p><p>组合继承：通过原型链继承原型的属性方法，通过借用构造函数继承实例的属性，最常用，但有多次调用超类型构造函数导致的低效率问题</p><p>原型式继承：在已有对象上借助原型创建新对象，新对象可以进一步添加属性方法</p><p>寄生式继承：封装了创建对象的过程，基于这个可以进一步增强对象</p><p>寄生组合式继承：通过原型链的混成形式调用方法，避免多次调用超类型构造函数，基于类型继承的最有效方式</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;这里会先把之前已经写好的总结陆续放上来，主要也是有一个时间顺序记录自己的学习过程（(#^.^#)）&lt;/p&gt;
-&lt;h1 id=&quot;面向对象与原型&quot;&gt;&lt;a href=&quot;#面向对象与原型&quot; class=&quot;headerlink&quot; title=&quot;面向对象与原型&quot;&gt;&lt;/a&gt;面向对象与原型&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+      <category term="javascript" scheme="https://jeremygo.cn/tags/javascript/"/>
     
   </entry>
   
