@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jeremygo.cn/"/>
-  <updated>2018-10-07T12:51:35.536Z</updated>
+  <updated>2018-10-15T14:41:07.230Z</updated>
   <id>https://jeremygo.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>每周精进(10.15)</title>
+    <link href="https://jeremygo.cn/2018/10/15/%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-10-15/"/>
+    <id>https://jeremygo.cn/2018/10/15/每周精进-10-15/</id>
+    <published>2018-10-15T14:22:40.000Z</published>
+    <updated>2018-10-15T14:41:07.230Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://jeremygo.cn/2018/10/07/%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-10-7/">10.7</a> 第三周计划总结~</p><ul><li style="list-style: none"><input type="checkbox"> 实现 jeem model 数据订阅相关功能，尝试 npm 自动构建流程</li><li style="list-style: none"><input type="checkbox"> 撰写与 jeem 相关知识的一篇博客</li><li style="list-style: none"><input type="checkbox"> 多阅读&lt; 你不知道的js &gt;（下卷）关键内容</li><li style="list-style: none"><input type="checkbox" checked> 专栏与训练营进度的持续跟进</li></ul><p>这周计划的完成度实在不忍看（捂脸），没有什么借口好找，假期结束后在平时事务与前端学习之间应该更好地掌握其中的节奏，接下来一周重点会放在16项目的结尾与17新开发的项目上，这也是 jeem 第一次亮剑，也希望能结合这个新项目更好地完善 jeem ，读书方面具体读到下卷的异步与性能之后发现中卷相关的回调 Promise 生成器等底层的理解与起源还是应该细读一遍，所以也会重读中卷的相关细节</p><p>10.21日前完成:</p><ul><li>理电学院项目的基本结尾</li><li>心理学院项目的开发初期领步并暨此完善 jeem 已知的不足（开发与生产模式配置 前后端联调配置）</li><li>细读&lt; 你不知道的js &gt; (中卷) 回调 Promise 生成器章节，回归下卷的阅读</li><li>&lt; 数据结构与算法之美 &gt; 专栏进度与训练营的跟进</li><li>至少完成&lt;网络协议&gt;专栏两篇文章的阅读</li></ul><p>近期书单：你不知道的JavaScript</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://jeremygo.cn/2018/10/07/%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-10-7/&quot;&gt;10.7&lt;/a&gt; 第三周计划总结~&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: non
+      
+    
+    </summary>
+    
+    
+      <category term="周计划" scheme="https://jeremygo.cn/tags/%E5%91%A8%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
   
   <entry>
     <title>每周精进(10.7)</title>
@@ -483,30 +508,6 @@
     
     
       <category term="Web" scheme="https://jeremygo.cn/tags/Web/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git常用操作</title>
-    <link href="https://jeremygo.cn/2017/11/30/Git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
-    <id>https://jeremygo.cn/2017/11/30/Git常用操作/</id>
-    <published>2017-11-30T14:46:08.000Z</published>
-    <updated>2017-12-30T09:57:57.438Z</updated>
-    
-    <content type="html"><![CDATA[<p>随着做项目的深入，对Git的使用也越来越频繁，这里就做一个常用操作的总结，不断更新~</p><h3 id="Git理念"><a href="#Git理念" class="headerlink" title="Git理念"></a>Git理念</h3><p>► 工作区（即本地文件）<br>► 暂存区<br>► 本地仓库<br>► 远程仓库</p><p>使用Git项目的文件都是在上面四个地方传递</p><h3 id="本地项目关联远程仓库"><a href="#本地项目关联远程仓库" class="headerlink" title="本地项目关联远程仓库"></a>本地项目关联远程仓库</h3><p>远程库建好以后就可以运行这条命令关联到本地项目：<br><code>git remote add origin your-remote-repository-url</code></p><p>如果是直接克隆远程仓库到本地的话：<br><code>git clone your-remote-repository-url</code></p><p>可以运行以下命令查看结果：</p><p><code>git remote -v</code>  查看当前项目的远程库<br><code>git branch -a</code>  查看当前项目的所有分支</p><h3 id="远程库同步到本地"><a href="#远程库同步到本地" class="headerlink" title="远程库同步到本地"></a>远程库同步到本地</h3><p>► 在提交更新以前都要先同步一下本地仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull   等同于 git fetch + git merge</span><br></pre></td></tr></table></figure></p><p>如果需要放弃本地修改，强制覆盖本地版本的话（即保持与远程库一致）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git fetch --all</span><br><span class="line">git reset --hard origin/master</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure></p><h3 id="提交本地更新到远程库"><a href="#提交本地更新到远程库" class="headerlink" title="提交本地更新到远程库"></a>提交本地更新到远程库</h3><p><code>git status</code> 检查当前项目状态</p><p>然后对于未跟踪的文件执行以下命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add untrack-file-path    跟踪单个本地文件，提交到暂存区</span><br><span class="line">git commit -m &quot;your commit&quot;  将跟踪过的文件即在暂存区的文件提交到本地仓库</span><br><span class="line">git push                     将本地仓库提交到远程库</span><br></pre></td></tr></table></figure><p>提交到远程库常用的命令还有：</p><p><code>git add .</code>      跟踪本地所有未跟踪的文件<br><code>git push -f</code>    强制提交更新，覆盖远程库 — 慎用！！！</p><h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><p>► 将当前版本回退到已提交的版本历史中<br><code>git reset --hard HEAD^</code>   一个^号代表回退一个版本</p><p>更多时候我们都会找到对应的版本号进行回退：<br>首先 <code>git log</code> 显示最近到最远的提交日志<br>如果只想显示版本号和评论信息的话可以加上 <code>--pretty=oneline</code> 参数<br>现在就可以  <code>git reset --hard version number</code>  回退到对应的版本</p><p>这里还有一个常用命令：<br><code>git reflog</code> 显示你的每一次命令，对于自己命令的整理很有帮助</p><h3 id="检查修改"><a href="#检查修改" class="headerlink" title="检查修改"></a>检查修改</h3><p>► 已修改，未暂存<br><code>git diff</code></p><p>► 已暂存，未提交<br><code>git diff --cached</code></p><p>► 已提交，未推送<br><code>git diff master origin/master</code></p><h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><p>► 向commit中添加忘记的文件(即更新最近的commit)</p><ul><li>编辑文件</li><li>保存文件</li><li>暂存文件</li><li><code>git commit --amend</code></li></ul><p>► 还原commit<br><code>git revert &lt;SHA&gt;</code> 撤销目标commit做出的更改，同时创建一个新的commit记录这一更改</p><p>► 重置commit<br><code>git reset &lt;reference&gt;</code> 清除commit</p><ul><li>将HEAD和当前分支指针移到引用的commit</li><li>使用<code>--hard</code>选项清除commit</li><li>使用<code>--sort</code>选项将commit的更改移至暂存区</li><li>使用<code>--mixed</code>选项取消暂存已被commit的更改</li></ul><p>► 已修改，未暂存<br><code>git checkout -- file-path</code></p><p>► 已暂存，未提交<br><code>git reset HEAD file-path</code>  先撤销暂存区的修改<br><code>git checkout -- file-path</code> 再撤销工作区的修改</p><p>PS: 以上两个步骤都可以用 <code>git reset --hard</code> 完成，一步到位将修改完全恢复到未修改的状态</p><p>► 已提交，未推送<br><code>git reset --hard origin/master</code>  从远程库将代码取回</p><p>► 已推送<br><code>git reset --hard HEAD^</code>    先回退本地库的版本<br><code>git push -f</code>               再强制推送到远程库</p><h3 id="分支与合并"><a href="#分支与合并" class="headerlink" title="分支与合并"></a>分支与合并</h3><p><code>git branch</code> ：</p><ul><li>列出仓库中所有的分支名称  — 活跃分支旁会显示一个星号</li><li>创建新的分支</li><li>删除分支  — 无法删除当前所在的分支</li></ul><p><code>git checkout</code> 切换分支，可以创建新的分支，<code>-b</code>选项可以附加切换到该分支</p><p><code>git log --oneline --decorate</code> 显示日志中的分支<br><code>git log --oneline --decorate --graph --all</code>  显示实际的所有分支</p><p><code>git merge &lt;other-branch&gt;</code> 合并分支</p><p>发生合并时，git将：</p><ul><li>查看将合并的分支</li><li>查看分支的历史记录并寻找两个分支的commit历史记录都有的单个commit</li><li>将单个分支上更改的代码行合并到一起</li><li>提交一个commit来记录合并操作</li></ul><p>合并有以下两种类型：</p><ul><li>快进合并-要合并的分支位于检出分支前面。检出分支的指针将向前移动，指向另一分支所指向的同一commit</li><li>普通类型的合并<ul><li>两个完全不同的分支被合并</li><li>创建一个合并commit</li></ul></li></ul><p>合并冲突：<br>当相同的行在要合并的不同分支上做出了更改时，就会出现合并冲突。解决：</p><ul><li>找到并删掉存在合并冲突指示符的所有行</li><li>决定保留哪些行</li><li>保存文件</li><li>暂存文件</li><li>提交commit</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;随着做项目的深入，对Git的使用也越来越频繁，这里就做一个常用操作的总结，不断更新~&lt;/p&gt;
-&lt;h3 id=&quot;Git理念&quot;&gt;&lt;a href=&quot;#Git理念&quot; class=&quot;headerlink&quot; title=&quot;Git理念&quot;&gt;&lt;/a&gt;Git理念&lt;/h3&gt;&lt;p&gt;► 工作区（即本
-      
-    
-    </summary>
-    
-    
-      <category term="Git" scheme="https://jeremygo.cn/tags/Git/"/>
     
   </entry>
   
