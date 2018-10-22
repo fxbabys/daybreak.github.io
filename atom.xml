@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jeremygo.cn/"/>
-  <updated>2018-10-15T14:41:07.230Z</updated>
+  <updated>2018-10-22T15:32:29.836Z</updated>
   <id>https://jeremygo.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>每周精进(10.22)</title>
+    <link href="https://jeremygo.cn/2018/10/22/%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-10-22/"/>
+    <id>https://jeremygo.cn/2018/10/22/每周精进-10-22/</id>
+    <published>2018-10-22T14:51:50.000Z</published>
+    <updated>2018-10-22T15:32:29.836Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://jeremygo.cn/2018/10/15/%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-10-15/">10.15</a> 第四周计划总结~</p><ul><li style="list-style: none"><input type="checkbox"> 理电学院项目的基本结尾(continuing)</li><li style="list-style: none"><input type="checkbox"> 心理学院项目初步(老师那边说暂时不做了…)</li><li style="list-style: none"><input type="checkbox"> 细读&lt;你不知道的js&gt;(中卷) 回调 Promise 生成器 章节(continuing)</li><li style="list-style: none"><input type="checkbox" checked> &lt;数据结构与算法之美&gt;专栏与训练营进度的跟进</li><li style="list-style: none"><input type="checkbox"> 至少完成&lt;网络协议&gt;专栏两篇文章的阅读(Hmm)</li></ul><p>这周的good parts应该就是 jeem 关于webpack配置部分做好了基础, 分离了开发和生产环境的配置, 为之后做了一个铺垫, 同时自己对于webpack整体的理解使用也有了一定的体会, 有空可以撰写博客出来啦, 其它部分… 项目上结尾进行中, 读书上感觉略微有点难啃了但是我会坚持进行下去的, keep forward!</p><p>10.28日前完成:</p><ul><li>理电项目测试上线</li><li>react 体系深入(结合视频开始)</li><li>专栏与训练营进度跟进, &lt;网络协议&gt; 至少完成两篇!</li></ul><p>More: 争取本月内完成 webpack 配置细节的博客, and jeem is forwarding now~</p><p>近期书单:  你不知道的JavaScript</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://jeremygo.cn/2018/10/15/%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-10-15/&quot;&gt;10.15&lt;/a&gt; 第四周计划总结~&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: n
+      
+    
+    </summary>
+    
+    
+      <category term="周计划" scheme="https://jeremygo.cn/tags/%E5%91%A8%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
   
   <entry>
     <title>每周精进(10.15)</title>
@@ -482,32 +507,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Web性能优化</title>
-    <link href="https://jeremygo.cn/2017/12/02/Web%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
-    <id>https://jeremygo.cn/2017/12/02/Web性能优化/</id>
-    <published>2017-12-02T05:08:33.000Z</published>
-    <updated>2017-12-02T05:22:27.090Z</updated>
-    
-    <content type="html"><![CDATA[<p>在书上看到了关于Web性能优化方面的知识，这里先记录下来，方便以后加以实践~</p><p>Web性能优化分为服务器端和浏览器端两个方面：</p><ul><li><p>压缩源码和图片<br>► JavaScript文件源代码可以采用混淆压缩的方式<br>► CSS文件源码可以进行普通压缩<br>► JPG图片可以根据具体质量来压缩为50%-70%<br>► PNG可以使用一些开源压缩软件来压缩，比如24色变成8色、去掉一些PNG格式信息等</p></li><li><p>选择合适的图片格式<br>► 如果图片颜色数较多就使用JPG格式<br>► 如果图片颜色数较少就使用PNG格式<br>► 如果能够通过服务器端判断浏览器支持WebP，就使用WebP格式和SVG格式</p></li><li><p>合并静态资源<br>► 包括CSS、JavaScript和小图片，减少HTTP请求</p></li><li><p>开启服务器端的Gzip压缩<br>► 对于文本资源非常有效，对图片资源则没那么大的压缩比率</p></li><li><p>使用CDN<br>► 或者一些公开库使用第三方提供的静态资源地址（比如jQuery、normalize、css）。一方面增加并发下载量，另一方面能够和其他网站共享缓存</p></li><li><p>延长静态资源缓存时间<br>► 这样频繁访问网站的访客就可以更快地访问。但是这里要通过修改文件名的方式，确保资源更新的时候，用户会拉取到最新的内容</p></li><li><p>把CSS放在页面头部，JavaScript放在页面底部<br>► 这样就不会阻塞页面渲染，让页面出现长时间的空白</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;在书上看到了关于Web性能优化方面的知识，这里先记录下来，方便以后加以实践~&lt;/p&gt;
-&lt;p&gt;Web性能优化分为服务器端和浏览器端两个方面：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;压缩源码和图片&lt;br&gt;► JavaScript文件源代码可以采用混淆压缩的方式&lt;br&gt;► CSS文件源
-      
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://jeremygo.cn/tags/Web/"/>
     
   </entry>
   
