@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jeremygo.cn/"/>
-  <updated>2018-11-10T00:27:08.877Z</updated>
+  <updated>2018-11-19T15:41:38.213Z</updated>
   <id>https://jeremygo.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>每周精进(11.18)</title>
+    <link href="https://jeremygo.cn/2018/11/19/%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-11-18/"/>
+    <id>https://jeremygo.cn/2018/11/19/每周精进-11-18/</id>
+    <published>2018-11-19T15:23:53.000Z</published>
+    <updated>2018-11-19T15:41:38.213Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://jeremygo.cn/2018/11/10/%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-11-10/">11.10</a>第七周计划总结~</p><ul><li style="list-style: none"><input type="checkbox" checked> 实践 jeem 结合 react-router 的使用规范 <a href="https://github.com/fxbabys/jeem/tree/master/examples/jeem-antd" target="_blank" rel="noopener">戳我</a></li><li style="list-style: none"><input type="checkbox" checked> 专栏进度跟进</li><li style="list-style: none"><input type="checkbox" checked> 熟悉网络与算法相关的基础面试题</li></ul><p>这周重新改造了 jeem-demo 的目录结构，结合 react-router 的语法设计了一个demo增强版的模板，可以直接基于这个模板进行成型项目的开发部署，同时结合专栏完善了基本数据结构的项目并开放出来，之后会依据已有目录更新完善更多的 JS 版本的代码～，接下来的重心觉得应该放一部分精力回各类大作业上了(~~)</p><p>11.25日前计划: </p><ul><li>完善 jsp 大作业的整体模板 (jeem subscription的扩展)</li><li>完成 Speedest 功能的基本扩展</li><li>Algorithm-JS 的完善</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://jeremygo.cn/2018/11/10/%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-11-10/&quot;&gt;11.10&lt;/a&gt;第七周计划总结~&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: no
+      
+    
+    </summary>
+    
+    
+      <category term="周计划" scheme="https://jeremygo.cn/tags/%E5%91%A8%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
   
   <entry>
     <title>每周精进(11.10)</title>
@@ -483,30 +508,6 @@
     
     
       <category term="ThinkPHP" scheme="https://jeremygo.cn/tags/ThinkPHP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WebSocket实践</title>
-    <link href="https://jeremygo.cn/2018/02/02/WebSocket%E5%AE%9E%E8%B7%B5/"/>
-    <id>https://jeremygo.cn/2018/02/02/WebSocket实践/</id>
-    <published>2018-02-02T11:04:49.000Z</published>
-    <updated>2018-02-02T12:06:11.251Z</updated>
-    
-    <content type="html"><![CDATA[<p>做小程序项目的时候有实时通信的需求，这里就整理一下WebSocket的知识</p><h3 id="关于WebSocket"><a href="#关于WebSocket" class="headerlink" title="关于WebSocket"></a>关于WebSocket</h3><ul><li>前言：Web应用的信息交互过程一般是客户端通过浏览器发出一个请求，服务器端接收完请求后进行处理并且返回结果给客户端，然后客户端浏览器解析信息，这样的机制对于实时要求比较高的应用来说就有很大的受限了，因此需要有一种高效节能的双向通信机制来保证数据的实时传输，WebSocket应运而生</li><li>概念：<ul><li>MDN: WebSocket是一个可以创建和服务器间进行双向会话的高级技术，通过这个API你可以向服务器发送消息并接受基于事件驱动的响应，这样就不用向服务器轮询获取数据了</li><li>WebSocket有web TCP之称，顾名思义是用来通信的，作为HTML5中新增的一种通信协议，由TCP协议与编程API组成，可以在浏览器与服务器之间建立双向连接，以基于事件的方式，赋予浏览器原生的实时通信能力，从而扩展我们的web应用，提升应用性能与用户体验</li></ul></li><li>为什么使用：<br>在WebSocket出现之前有一些其它的实时通讯方案，比如轮询、长轮询、服务器发送事件<ul><li>轮询(Polling)：客户端以一定的时间间隔向服务器发送请求，通过频繁请求的方式来保持客户端和服务器端的数据同步。通常采取<code>setInterval</code>或者<code>setTimeout</code>实现。问题：客户端以固定频率向服务器端发送请求时，服务器端的数据可能并没有更新，这样很多请求就是没有必要的，浪费带宽，低效率</li><li>长轮询(Long Polling)：对定时轮询的改进和提高，当服务器端没有数据更新的时候，连接会保持一段时间周期直到数据或状态改变或者时间过期，以此减少无效的客户端与服务器间的交互。问题：如果服务端的数据变更非常频繁的话，与定时轮询比较起来没有本质上性能的提高</li><li>服务器发送事件(Server-Sent Event)：是HTML5规范的一个组成部分，可以实现服务器到客户端的单向数据通信，通过SSE，客户端可以自动获取数据更新，而不用重复发送HTTP请求。问题：只支持到服务器到客户端单向的事件推送，而且所有版本的IE都不支持SSE</li><li>WebSocket：在流量与负载量增大的情况下，相比于传统的Ajax轮询方案有极大的性能优势，在开发方面也不算复杂，只需要实例化WebSocket创建连接，成功后就可以发送相应消息了</li></ul></li></ul><h3 id="Node实现"><a href="#Node实现" class="headerlink" title="Node实现"></a>Node实现</h3><p>这里采用Node的ws库来实现简单的WebSocket服务器</p><ul><li><p>服务器：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var WebSocketServer = require(&quot;ws&quot;).Server;</span><br><span class="line">var wss = new WebSocketServer(&#123;</span><br><span class="line">    port: 3001</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">wss.on(&quot;connection&quot;, function(ws) &#123;</span><br><span class="line">    ws.on(&quot;message&quot;, function(msg) &#123;</span><br><span class="line">        console.log(msg);</span><br><span class="line">        ws.send(&quot;Nice to meet you!&quot;);</span><br><span class="line">    &#125;);</span><br><span class="line">    ws.on(&quot;close&quot;, function() &#123;</span><br><span class="line">        console.log(&quot;Stop client&quot;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li><li><p>小程序客户端：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">wx.connectSocket(&#123;</span><br><span class="line">    url: &apos;服务器的链接:3001&apos;,</span><br><span class="line">    data: &#123;&#125;,</span><br><span class="line">    header: &#123;</span><br><span class="line">        &apos;content-type&apos;: &apos;application/json&apos;</span><br><span class="line">    &#125;,</span><br><span class="line">    method: &apos;GET&apos;,</span><br><span class="line">    success: function() &#123;</span><br><span class="line">        console.log(&quot;客户端连接成功&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;),</span><br><span class="line">wx.onSocketOpen(function() &#123;</span><br><span class="line">    console.log(&quot;WebSocket连接已打开&quot;);</span><br><span class="line">    wx.sendSocketMessage(&#123;</span><br><span class="line">        data: &apos;Hello!&apos;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;),</span><br><span class="line">wx.onSocketMessage(function(msg) &#123;</span><br><span class="line">    console.log(&quot;接收到：&quot;+ msg);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li></ul><p>这里特别提一下<code>wx.onSocketMessage()</code>，因为它只接收字符串和二进制类型的数据，因此如果需要发送json格式的数据就需要转换一下，只要是支持WebSocket肯定支持原生window.JSON，所以可以直接使用JSON.parse()和JSON.stringify()来转换</p><p>这样一个双向通信的实例基本就完成了</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;做小程序项目的时候有实时通信的需求，这里就整理一下WebSocket的知识&lt;/p&gt;
-&lt;h3 id=&quot;关于WebSocket&quot;&gt;&lt;a href=&quot;#关于WebSocket&quot; class=&quot;headerlink&quot; title=&quot;关于WebSocket&quot;&gt;&lt;/a&gt;关于WebSoc
-      
-    
-    </summary>
-    
-    
-      <category term="WebSocket" scheme="https://jeremygo.cn/tags/WebSocket/"/>
     
   </entry>
   

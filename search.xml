@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[每周精进(11.18)]]></title>
+    <url>%2F2018%2F11%2F19%2F%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-11-18%2F</url>
+    <content type="text"><![CDATA[11.10第七周计划总结~ 实践 jeem 结合 react-router 的使用规范 戳我 专栏进度跟进 熟悉网络与算法相关的基础面试题 这周重新改造了 jeem-demo 的目录结构，结合 react-router 的语法设计了一个demo增强版的模板，可以直接基于这个模板进行成型项目的开发部署，同时结合专栏完善了基本数据结构的项目并开放出来，之后会依据已有目录更新完善更多的 JS 版本的代码～，接下来的重心觉得应该放一部分精力回各类大作业上了(~~) 11.25日前计划: 完善 jsp 大作业的整体模板 (jeem subscription的扩展) 完成 Speedest 功能的基本扩展 Algorithm-JS 的完善]]></content>
+      <tags>
+        <tag>周计划</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[每周精进(11.10)]]></title>
     <url>%2F2018%2F11%2F10%2F%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-11-10%2F</url>
     <content type="text"><![CDATA[10.30 第六周计划总结~ react深入学习(Test方面)(continuing) 专栏的跟进(continuing) 读完&lt;&lt;跃迁&gt;&gt; 关于 Test 这方面目前能深入的并不多，大部分时间还是在完成业务逻辑，两篇专栏的进度会更加重视跟进，最大的收获就是读完跃迁了，对硅谷的相关体系有了更深的了解，同时也对我之后想走的方向有一定的指导性 这个月开始来年春招的消息越来越多了，也有争取寒假实习的打算，接下来的重点结束好手上的项目以后会放在面试上，每周精进这部分之后会固定在周末的时间进行回顾，下一周的目标会更细致地考虑而定，保证立下的 flag 能好好实现 11.17日前计划： 实践 jeem 结合 react-router 的使用规范 专栏进度持续跟进 熟悉网络与算法相关的基础与面试题]]></content>
