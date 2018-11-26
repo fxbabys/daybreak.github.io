@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[每周精进(11.26)]]></title>
+    <url>%2F2018%2F11%2F26%2F%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-11-26%2F</url>
+    <content type="text"><![CDATA[11.18 第八周计划总结～ 完善 jsp 大作业的整体模板 完成 Speedest 功能的基本扩展(doing) Algorithm-JS 的完善(doing) 本周推进最多的应该是 jsp 的大作业了，到现在的阶段基本的构造以及计划都已经成型，我是不打算写 jsp 的，最终思路还是进行前后端分离的实践，做一个类似 Google Drive 的文件存储云平台，后端采用 java ，数据库的选择上一方面项目有很重要的一个逻辑就是文件的分类，即一个分类对应多个文件，另一方面也想尝试一下新东西，所以选择了 MongoDB，目前后端的接口基础已经打好了，接下来这一周会结合数据库的设计逐渐完善，另一个 java 的课设实现多线程下载与断点续传比较难啃，接下里的重心会放在这两个上面 12.2日前计划: 继续完善 Drive Online （后端接口设计） Speedest-downloader 实现 Algorithm-JS 的完善]]></content>
+      <tags>
+        <tag>周计划</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[每周精进(11.18)]]></title>
     <url>%2F2018%2F11%2F19%2F%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-11-18%2F</url>
     <content type="text"><![CDATA[11.10第七周计划总结~ 实践 jeem 结合 react-router 的使用规范 戳我 专栏进度跟进 熟悉网络与算法相关的基础面试题 这周重新改造了 jeem-demo 的目录结构，结合 react-router 的语法设计了一个demo增强版的模板，可以直接基于这个模板进行成型项目的开发部署，同时结合专栏完善了基本数据结构的项目并开放出来，之后会依据已有目录更新完善更多的 JS 版本的代码～，接下来的重心觉得应该放一部分精力回各类大作业上了(~~) 11.25日前计划: 完善 jsp 大作业的整体模板 (jeem subscription的扩展) 完成 Speedest 功能的基本扩展 Algorithm-JS 的完善]]></content>
