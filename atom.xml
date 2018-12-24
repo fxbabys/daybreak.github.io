@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jeremygo.cn/"/>
-  <updated>2018-12-19T07:21:56.227Z</updated>
+  <updated>2018-12-24T17:13:32.301Z</updated>
   <id>https://jeremygo.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>每周精进(12.25)</title>
+    <link href="https://jeremygo.cn/2018/12/25/%E6%AF%8F%E5%91%A8%E7%B2%BE%E8%BF%9B-12-25/"/>
+    <id>https://jeremygo.cn/2018/12/25/每周精进-12-25/</id>
+    <published>2018-12-24T16:58:41.000Z</published>
+    <updated>2018-12-24T17:13:32.301Z</updated>
+    
+    <content type="html"><![CDATA[<p>学业方面：目前基本完成了 Drive Online 整体的逻辑，最终决定做的还是精简化 健壮化（学会给自己砍需求2333）, 剩下的在前台交互细节上再打磨一下周六就可以答辩了，这个项目已经有了足够完善的基础，之后是打算扩展成毕设的～</p><p>实习方面：目前已经投出去了好几家，也联系到了一些大佬进行交流，自己目前薄弱的地方还是在算法没怎么刷过题上，上次面试也感觉这是个短板，因此接下来重点放在多刷点题上，之前用 js 实现数据结构与算法的仓库也会继续完善，同时对于前端一些较陌生的原理会继续深入理解，结合被动面试法好好涨涨经验～</p><p>12.31 日前计划：</p><ul><li>Drive Online 答辩</li><li>理电项目接口完成</li><li>面试准备<ul><li>剑指 offer</li><li>缓存与性能优化整理</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;学业方面：目前基本完成了 Drive Online 整体的逻辑，最终决定做的还是精简化 健壮化（学会给自己砍需求2333）, 剩下的在前台交互细节上再打磨一下周六就可以答辩了，这个项目已经有了足够完善的基础，之后是打算扩展成毕设的～&lt;/p&gt;
+&lt;p&gt;实习方面：目前已经投出去了
+      
+    
+    </summary>
+    
+    
+      <category term="周计划" scheme="https://jeremygo.cn/tags/%E5%91%A8%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
   
   <entry>
     <title>每周精进(12.19)</title>
@@ -486,28 +510,6 @@
     
     
       <category term="Courses" scheme="https://jeremygo.cn/tags/Courses/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深入浅出Nginx</title>
-    <link href="https://jeremygo.cn/2018/05/29/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANginx/"/>
-    <id>https://jeremygo.cn/2018/05/29/深入浅出Nginx/</id>
-    <published>2018-05-29T11:31:26.000Z</published>
-    <updated>2018-05-29T15:46:46.384Z</updated>
-    
-    <content type="html"><![CDATA[<p>之前在自己的阿里云服务器上部署了Nginx服务主要用作node服务的代理，这里看到一篇不错的文章简记一下~</p><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>Nginx是一款轻量级的Web服务器及反向代理服务器，因为内存中占用少、启动极快、高并发能力强的原因，在互联网项目中广泛应用<br><img src="https://ws1.sinaimg.cn/large/e4336439gy1frsgjbi5aej20j40e2aax.jpg" alt=""></p><blockquote><p>当下流行的技术架构，nginx有点像入口网关</p></blockquote><h3 id="代理"><a href="#代理" class="headerlink" title="代理"></a>代理</h3><h4 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h4><ul><li>平时我们使用梯子访问谷歌就是一个简单的正向代理的例子，正向代理“代理”的是客户端，客户端是知道目标的，但是目标不知道客户端是通过梯子访问的</li></ul><h4 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h4><ul><li>我们在外网访问百度时会进行一个转发代理到内网既是反向代理，反向代理“代理”的是服务器端，这一个过程对于客户端是透明的</li></ul><h3 id="Master-Worker模式"><a href="#Master-Worker模式" class="headerlink" title="Master-Worker模式"></a>Master-Worker模式</h3><p>启动Nginx后，就是在80端口启动了Socket服务进行监听，Nginx涉及Mater进程和Worker进程<br><img src="https://ws1.sinaimg.cn/large/e4336439gy1frsg790v3mj20m503uaad.jpg" alt=""></p><h4 id="Mater进程作用"><a href="#Mater进程作用" class="headerlink" title="Mater进程作用"></a>Mater进程作用</h4><ul><li>读取并验证配置文件nginx.conf，管理worker进程</li></ul><h4 id="Worker进程作用"><a href="#Worker进程作用" class="headerlink" title="Worker进程作用"></a>Worker进程作用</h4><ul><li>Worker进程作用：每一个Worker进程都维护一个线程（避免线程切换），处理连接和请求；注意Worker进程的个数由配置文件决定，一般和CPU个数有关（有利于进程切换）</li></ul><h4 id="热部署"><a href="#热部署" class="headerlink" title="热部署"></a>热部署</h4><ul><li>热部署：配置文件nginx.conf修改以后不需要stop nginx中断请求，就能让配置文件生效<br>结合worker进程负责处理具体的请求：<ul><li>方案一：修改nginx.conf后，主进程master负责推送给worker进程更新配置信息，worker进程收到信息后更新进程内部的线程信息</li><li>方案二：修改nginx.conf后，重新生成新的worker进程，以新的配置进行处理请求，老的woker进程等它们的请求处理完毕后kill掉即可<br>nginx采用方案二实现热部署</li></ul></li></ul><h4 id="如何做到高并发下的高效处理"><a href="#如何做到高并发下的高效处理" class="headerlink" title="如何做到高并发下的高效处理"></a>如何做到高并发下的高效处理</h4><ul><li>上文已经提及nginx的worker进程个数与CPU绑定、worker进程内部包含一个线程高效回环处理请求，的确有助于效率但是不够。同时处理那么多请求的问题在于，有的请求需要发生IO，可能需要很长时间，如果等着它们，就会拖慢worker的处理速度<ul><li>nginx采用了Linux的epoll模型，这个模型基于事件驱动机制，它可以监控多个事件是否准备完毕，如果OK，那么放入epoll队列中，这个过程是异步的。所以worker只需要从epoll队列循环处理即可</li></ul></li><li>nginx挂了怎么办：nginx作为入口网关，如果出现单点问题显然是不可接受的<ul><li>解决方案：Keepalived + Nginx</li><li>keepalived 是一个高可用解决方案，主要用来防止服务器单点发生故障，可以通过和nginx配合来实现Web服务的高可用</li><li>思路：<ul><li>请求不要直接打到nginx上，应该先通过Keepalived (虚拟IP)</li><li>Keepalived 应该能监控nginx的生命状态（提供一个用户自定义的脚本，定期检查nginx进程状态，进行权重变化，从而实现nginx故障切换）<br><img src="https://ws1.sinaimg.cn/large/e4336439gy1frsgov5bh3j20jg07tdgl.jpg" alt=""></li></ul></li></ul></li></ul><h3 id="主战场：nginx-conf"><a href="#主战场：nginx-conf" class="headerlink" title="主战场：nginx.conf"></a>主战场：nginx.conf</h3><p>nginx.conf是典型的分段配置文件</p><h4 id="虚拟主机"><a href="#虚拟主机" class="headerlink" title="虚拟主机"></a>虚拟主机</h4><ul><li><img src="https://ws1.sinaimg.cn/large/e4336439gy1frsgrqy6tsj20ia080t8w.jpg" alt=""></li><li>把nginx作为web server来处理静态资源<ul><li>location可以进行正则匹配，注意正则的几种形式以及优先级</li><li>nginx能提高速度的其中一个特性：动静分离，把静态资源放到nginx上，由nginx管理，动态请求转发给后端</li><li>在nginx下将静态资源、日志文件归属到不同域名（目录）下，方便管理维护</li><li>nginx可以进行ip访问控制，如有些电商平台，在nginx这一层就做了处理，内置一个黑名单模块<h4 id="反向代理-1"><a href="#反向代理-1" class="headerlink" title="反向代理"></a>反向代理</h4></li></ul></li><li>在location这一段配置中的root替换成proxy_pass即可<ul><li>root说明是静态资源，可以由nginx进行返回；而proxy_pass说明是动态请求，需要进行转发，如代理到Tomcat上</li><li>反向代理过程是透明的，比如在request-&gt;nginx-&gt;Tomcat这里对于Tomcat而言请求的ip就是nginx的地址而不是真实的request地址。好在nginx不仅仅可以反向代理请求，也可以由用户自定义设置HTTP HEADER<h4 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h4></li></ul></li><li>在反向代理中，通过proxy_pass来指定Tomcat的地址，这里只能指定一台Tomcat，如果想指定多台来达到负载均衡呢？<ul><li>通过 upstream 来定义一组Tomcat，并指定负载策略（IPHASH、加权论调、最少连接），健康检查策略（nginx监控这一组Tomcat的状态）等</li><li>将proxy_pass换成upstream指定的值即可</li></ul></li><li>带来的问题：用户状态的保存问题，如session信息不能保存到服务器上</li></ul><h3 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h3><ul><li>在配置上开启，同时指定目录，让缓存可以存储到磁盘上</li></ul><p>参考：<br><a href="http://blog.51cto.com/zhangfengzhe/2064524" target="_blank" rel="noopener">http://blog.51cto.com/zhangfengzhe/2064524</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;之前在自己的阿里云服务器上部署了Nginx服务主要用作node服务的代理，这里看到一篇不错的文章简记一下~&lt;/p&gt;
-&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;Nginx是一款轻
-      
-    
-    </summary>
-    
     
   </entry>
   
